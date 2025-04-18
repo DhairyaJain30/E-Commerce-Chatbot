@@ -1106,6 +1106,7 @@ nlu:
     - I can't understand you and I want to speak with a human
     - help me speak with a person
     - please, i want to know if there is any fucking person available
+    - Yes connect with it.
 
 - intent: create_account
   examples: |
@@ -3358,9 +3359,45 @@ nlu:
     - I filled the form but nothing happened
     - The registration page is broken
     - I'm having issues registering
+    - I am unalble to create it. 
+    - I can't create my account.
+    - Some problem is coming.
+    - There is some problem.
 
 - intent: ask_account_requirements
   examples: |
     - What details are needed to create account?
     - What info is required for signup?
     - Do I need an email to register?
+    - What will be needed for that ? 
+
+- intent: frustation
+  examples: |
+   - No, you can't understand
+   - What are you saying ?
+   - I am not trying to say this !?
+   - Are you dumb 
+   - Forgot it
+   - This isn't what i asked
+   - I am getting frustated
+
+- intent: no_human_needed
+  examples: |
+   - No, I dont want human.
+   - No,You try to resolve it.
+   - No
+   - no
+   - Try once again.
+
+- intent: email_provided
+  examples: |
+   - this is my email abcd@example.com
+   - aswq23@exam.in
+   -zas223a@example.com
+
+- intent : password_provided
+  examples: |
+   - this is password - test123
+   - Test1@s23
+   - @cent43sa - this is 
+   - Sigug21*&

@@ -39,6 +39,10 @@ intents:
   - already_shipped
   - facing_issue_create_account
   - ask_account_requirements
+  - frustation
+  - no_human_needed
+  - email_provided
+  - password_provided
 
 # Reset Password
 slots:
@@ -76,8 +80,38 @@ slots:
     mappings:
        - type: from_intent
          intent: create_account
-         value: true  # You may set it to true if the intent matches
+         value: true  
+  
+  wants_human:
+    type: bool
+    influence_conversation: true  
+    mappings:
+      - type: from_intent
+        intent: contact_human_agent
+        value: true
+  
+  email:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_text
+        intent: email_provided
+  
+  password:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_text
+        intent: password_provided
 
+forms:
+  create_account_form:
+    required_slots:
+      - email
+      - password
+
+
+    
 # Reset Password
 actions:
   - action_set_reset_stage_started
@@ -125,7 +159,7 @@ responses:
 
 
   utter_facing_issue_create_account:
-    - text: "Sorry to hear you're having trouble! Please try refreshing the page or using a different browser. If the issue continues, contact support."
+    - text: "Sorry to hear you're having trouble! Please provide me with your email and password. I can help you create an account."
 
   utter_ask_account_requirements:
     - text: "To create an account, you'll need a valid email address and a secure password. That's all!"
@@ -226,7 +260,22 @@ responses:
 
   utter_thank_you:
     - text: "Glad it worked! Let me know if you need anything else."
+  
+  utter_frustation:
+    - text: "Sorry, I am able to help you properly.Would you like me to connect you to a human support ?"
+  
+  utter_no_human_needed:
+    - text: "Alright, I am here for your further help.Let's try again to resolve your problem."
+  
+  utter_ask_email:
+   - text: "Can you please provide me with the email"
+  
+  utter_ask_password:
+   - text: "Thanks for the email. Please give me the password."
+  
+  utter_submit_account:
+   - text: "Your account has been created. You can login now."
 
 session_config:
   session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+  carry_over_slots_to_new_session: false

@@ -132,3 +132,28 @@ stories:
   steps:
   - intent: review
   - action: utter_review
+
+# Frustation
+
+- story: User frustrated then asks human
+  steps:
+    - intent: frustation
+    - action: utter_frustation
+    - intent: contact_human_agent
+    - action: utter_contact_human_agent
+
+- story: User frustrated then says no human needed
+  steps:
+    - intent: frustation
+    - action: utter_frustation
+    - intent: no_human_needed
+    - action: utter_no_human_needed
+
+- story: User tries to create account 
+  steps:
+  - intent: create_account
+  - action: utter_create_account
+  - intent: frustation
+  - action: utter_frustation
+  - intent: contact_human_agent
+  - action: utter_contact_human_agent

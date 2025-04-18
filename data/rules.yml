@@ -83,13 +83,45 @@ rules:
     - intent: create_account
     - action: utter_create_account
 
-- rule: Handle account creation issue
-  steps:
-    - intent: facing_issue_create_account
-    - action: utter_facing_issue_create_account
-
 - rule: Answer account requirement query
   steps:
     - intent: ask_account_requirements
     - action: utter_ask_account_requirements
 
+- rule: Handle account creation issue
+  steps:
+    - intent: facing_issue_create_account
+    - action: utter_facing_issue_create_account
+    - action: create_account_form
+    - active_loop: create_account_form
+
+- rule: Submit Create Form
+  condition: 
+    - active_loop: create_account_form
+  steps:
+    - action: create_account_form
+    - active_loop: null
+    - action: utter_submit_account
+
+
+#Frustation
+
+- rule: Respond to frustation
+  steps:
+    - intent: frustation
+    - action: utter_frustation
+
+- rule: Contact human after frustation
+  steps:
+    - intent: contact_human_agent
+    - action: utter_contact_human_agent
+
+- rule: User denies human help
+  steps:
+    - intent: frustation
+    - action: utter_frustation
+
+- rule: User says no human needed
+  steps:
+    - intent: no_human_needed
+    - action: utter_no_human_needed
