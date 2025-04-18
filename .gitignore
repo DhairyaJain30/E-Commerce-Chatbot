@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+.env
+
+# RASA
+models/
+*.db
+*.json
+
+# Virtual Environment
+venv/
+env/
+.venv/
+
+# Logs
+*.log
+
+# IDEs
+.vscode/
+.idea/
+
+# Flask
+instance/
+*.sqlite
+
+# Node/NPM
+node_modules/
+
+# Mac/Linux/Windows
+.DS_Store
+Thumbs.db
