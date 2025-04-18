@@ -1,0 +1,95 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+#Reset Password
+
+- rule: Start password reset flow
+  steps:
+    - intent: reset_password
+    - action: action_set_reset_stage_started
+    - action: utter_reset_password
+
+- rule: Handle reset email issue
+  steps:
+    - intent: reset_email_issue
+    - action: action_set_reset_stage_email_issue
+    - action: utter_reset_email_issue
+
+- rule: Finish reset flow
+  steps:
+    - intent: reset_done
+    - action: action_clear_reset_stage
+    - action: utter_thank_you
+
+# Track Order
+- rule: Start tracking flow
+  steps:
+    - intent: track_order
+    - action: action_set_track_stage
+    - action: utter_track_order
+
+- rule: Handle tracking issues
+  steps:
+    - intent: tracking_not_working
+    - action: action_set_track_stage_issue
+    - action: utter_tracking_issue
+
+- rule: Handle delayed delivery
+  steps:
+    - intent: order_delayed
+    - action: utter_order_delayed
+
+- rule: Acknowledge order received
+  steps:
+    - intent: order_received
+    - action: action_clear_track_stage
+    - action: utter_order_received
+
+# Change shipping address
+
+- rule: Start shipping change flow
+  steps:
+    - intent: change_shipping_address
+    - action: action_set_shipping_stage
+    - action: utter_change_shipping_address
+
+- rule: Handle issue changing address
+  steps:
+    - intent: unable_to_change_address
+    - action: action_set_shipping_stage_issue
+    - action: utter_unable_to_change_address
+
+- rule: Address change after shipping
+  steps:
+    - intent: already_shipped
+    - action: action_clear_shipping_stage
+    - action: utter_already_shipped
+
+# Create Account
+
+- rule: Guide user to create account
+  steps:
+    - intent: create_account
+    - action: utter_create_account
+
+- rule: Handle account creation issue
+  steps:
+    - intent: facing_issue_create_account
+    - action: utter_facing_issue_create_account
+
+- rule: Answer account requirement query
+  steps:
+    - intent: ask_account_requirements
+    - action: utter_ask_account_requirements
+

@@ -1,0 +1,3366 @@
+version: '3.1'
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: cancel_order
+  examples: |
+    - i wanna cancel an order, what should i do?
+    - I need hjelp cancelling a purchase
+    - can I cancel a purchase?
+    - I want to cancel a purchase, can you help me?
+    - I want to cancel a purchase, what do I have to do?
+    - I want to cancel an order
+    - can u ask an agent to cancel a fucking purchase, please?
+    - how to cancel an order
+    - I want to cancel an order, what do I have to do?
+    - ask an agent to cancel a order
+    - ask an agent if i could cancel a purchase, please
+    - can u ask an agent to cancel an order?
+    - help me cancel a purchase
+    - I need help cancelling an order
+    - I want to cancel a purchase, what should I do?
+    - ask an agent if I can cancel an order
+    - i  wanna cancel an order
+    - how can I cancel an order?
+    - i want to cancel a purchase, can u help me?
+    - i want to cancel a purchase, what can i do?
+    - I want to cancel an order, what should I do?
+    - I want to cancel an order, can you help me?
+    - how can i cancel a purchase?
+    - how to cancel a purchase
+    - please, ask an agent how i can cancel an order
+    - can I cancel an order?
+    - how do I cancle a purchase?
+    - I want to cancel an order, what can I do?
+    - i want to cancel an order, what do i have to do?
+    - I waznt to cancel  purchase
+    - help me cancel an order
+    - can i cancel an order?
+    - how can I cancel a purchase?
+    - how do I cancel an order?
+    - ask an agent how i could cancel an order
+    - I want to cancel a purchase, what can I do?
+
+- intent: change_shipping_address
+  examples: |
+    - i want to modify my shipping address, what should i do?
+    - I want to update my shipping address, what can I do?
+    - where can I edit my shipping address?
+    - can you ask an agent where I can update my shipping address?
+    - can I make changes to my shipping address?
+    - my shipping address has changed, hat can Ido?
+    - how do I edit my shipping address?
+    - where do I change my shipping address?
+    - can u ask an agent how i can change my shipping address?
+    - I want to modify my shipping address, can you help me?
+    - where can I update my shipping address?
+    - I want to edit my shipping address, what can I do?
+    - my shipping address has changed, can you help me?
+    - I would like to edit my shipping address
+    - i need help updating my shipping address
+    - how do I modify my shipping address?
+    - where do I edit my shipping address?
+    - I want to edit my shipping address, what should I do?
+    - please, can you ask an agent where I can update my shipping address?
+    - how can I update my shipping address?
+    - my shipping address has changed, what should I do?
+    - how can I edit my shipping address?
+    - where do I make changes to my shipping address?
+    - could you ask an agent where to make changers to my fucking shipping address?
+    - how do I make changes to my shipping address?
+    - please, ask an agent to update my shipping address
+    - how  to update my shipping address
+    - how to change myshipping address
+    - i want to update my shipping address
+    - how can i change my shipping address?
+    - ask an agent to make  changes to my shipping address
+    - please, can you ask an agent if I can make changes to my fucking shipping address?
+    - i wanna edit my shipping address, what can i do?
+    - i wanna update my shipping address, what should i do?
+    - could you ask an agent where I could update my shipping address?
+    - I want to edit my shipping address
+    - ask an agent how to make changes to my shipping address
+    - can i change my shipping address?
+    - ask an agent if i can edit my shipping address
+    - how to modify my shipping address
+    - i want to make changes to my shipping address
+    - help me make changes to my shipping adress
+    - can you ask an agent if I could modify my shipping address?
+    - my shipping address has changed, what do I have to do?
+    - can i update my shipping address?
+    - I want to modify my shipping address
+    - how do i modify my shipping address?
+    - i wanna modify my shipping address, what do i have to do?
+    - how to make changes to my shipping address
+    - I want to edit my shipping address, what do I have to do?
+    - ask an agent where to edit my shipping address
+    - I need help updating my shipping address
+    - where can I make changes to my shipping address?
+    - where do I modify my shipping address?
+    - ask an agent if I could update my fucking shipping address
+    - how can I change my shipping address?
+    - I want to modify my shipping address, what should I do?
+    - could u ask an agent where i can update my fucking shipping address?
+    - I need help editing my shipping address
+    - how do I change my shipping address?
+    - I want to edit my shipping address, can you help me?
+    - help me change my shipping address
+    - help me modify my shipping address
+    - how can I make changes to my shipping address?
+    - where can I modify my shippinmg address?
+    - can I edit my shipping address?
+    - where can I change my shipping address?
+    - I need help modifying my shipping address
+    - ask an agent if i can update my shipping address
+    - ask an agent how I could modify my shipping address, please
+    - I want to update my shipping address, what do I have to do?
+    - can u ask an agent to update my shipping address?
+    - can I change my shipping address?
+    - help me update my shipping address
+    - where do I update my shipping address?
+    - i want to edit my shipping address, can u help me?
+    - can I modify my shipping address?
+    - how to edit my shipping address
+    - please, could you ask an agent if I could make changes to my fucking shipping
+      address?
+    - i wanna update my shipping address, what can i do?
+    - I want to modify my shipping address, what can I do?
+    - where to modify my shipping address
+    - where to make changes to my shipping address
+    - i need help changing my shipping address
+    - can I update my shipping address?
+    - ask an agent if i can edit my shipping address, please
+    - where do i modify my shipping address?
+    - ask an agent how to update my shipping address, please
+    - help me edit my shipping address
+    - I want  to upsate my shipping address
+    - where to change  my shipping address
+    - could you ask an agent where to make changes to my shipping address, please?
+    - I'd like to modify my shipping address, could you help me?
+    - how do I update my shipping address?
+    - where to update my shipping address
+    - please, can you ask an agent where I can modify my shipping address?
+    - I want to update my shipping address, what should I do?
+    - where to edit my shipping address
+    - how can I modify my shipping address?
+    - I want to update my shipping address, can you help me?
+    - can u ask an agent how tomake changes to my shipping addrrss?
+    - where do i change my shipping address?
+    - I want to modify my shipping address, what do I have to do?
+    - I want to make changes to my shipping adress
+    - I need help making changes to my shipping address
+    - can u ask an agent to make changes to my shipping address?
+    - I want to change my shipping address
+    - I need help changing my shipping address
+    - ask an agent to edit my shipping address
+    - i wanna change my shipping address
+
+- intent: check_invoice
+  examples: |
+    - I can't find my bill, can I check it?
+    - I can't find my bills, how can I check them?
+    - i want to checkl my bills, can u help me?
+    - I want to see my invoices, what can I do?
+    - I lost my bills, I need help seeing them
+    - how do i see my invoices?
+    - i want to see my invoices, what should i do?
+    - I want to see my bill, what do I have to do?
+    - I lost my invoices and I'd like to check them
+    - I lost my bills, ca you view them?
+    - where do I check my invoice?
+    - where can I check my invoice?
+    - i can't find my bill, how could i see it?
+    - i wanna see my bills, what can i do?
+    - I want to view my invoices, can you help me?
+    - how do I check my invoice?
+    - I lost my invoice, can you view it?
+    - i didn't receive my bill, how could i check it?
+    - please, could u ask an agent how i could view my invoice?
+    - I didn't receive my invoice, how do I see it?
+    - could you ask an agent where I can check my invoices, please?
+    - I didn't receive my bills, what should I do to se them?
+    - I didn't receive my invoices, what should I do to see them?
+    - i didn't receive my bill, help me check it
+    - can u ask an agent where to check my bill?
+    - I can't find my bills, could I see them?
+    - i can't find my bills, what should i do to view them?
+    - I can't find my invoice and I want to check it
+    - i can't find my bill and i wanna view it, please
+    - i didn't receive my bills, how do i see them?
+    - i didn't receive my invoices , i need help viewing thme
+    - I can't find my invoice, help me view it
+    - i didn't receive my invocies, could u check them?
+    - i lost my bills and i wanna check them
+    - I can't find my invoice and I want to view it
+    - I want to see my bills, what should I do?
+    - i lost my bill and i wanna view it
+    - i want to see my invoices, what can i so?
+    - i lost my bill, can i view it?
+    - check my invoice
+    - i lost my invoices, what can i do to view them?
+    - i lost my bill, check it
+    - i didn't receive my invoice and i want to check it
+    - I lost my bill , can I see it?
+    - I lost my invoice, what should I do to check it?
+    - I lost my bill, can I check it?
+    - I need help viewing my bill
+    - I lost my bills, how can I see them?
+    - I didnm't receive my bill, how do I view it?
+    - I didn't receive my bill, can you show it?
+    - I didn't receive my bill, what can I do to check it?
+    - please , could u ask an agent how to see my fucking bill?
+    - i didn't receive my bills, czn u shwo them?
+    - i lost my invoice, view it
+    - how can I see my bill?
+    - i didn't receive my invoices, can u show them?
+    - I didn't receive my invoice, I need help viewing it
+    - i can't find my invoice, what do i have to do to view it?
+    - i lost my invoices, what do i have to do to check them?
+    - please , ask an agent where ican see my invoice
+    - I didn't receive my invoices, what do I have to do to view them?
+    - please, can u ask an agent to show me my invoices?
+    - I can't find my invoices, what do I have to do to check them?
+    - I didn't receive my bill, I need help seeing it
+    - i can't find my invoice, can i see it?
+    - could u ask an agent if i can check my bill?
+    - I didn't receive my bill, how do I see it?
+    - I lost my invoices, view them
+    - i lost my bill, show it
+    - I can't find my bill, how can I see it?
+    - i didn't receive my invoices, how can i view them?
+    - I didn't receive my invoices, show them
+    - i didn't receive my invoices, view them
+    - i can't find my invoices, what can i do to view them?
+    - I can't find my bills, how do I check them?
+    - I didn't receive my bills, what do I have to do to check them?
+    - I olst my invoice, what can I di to check it?
+    - ask an agent for information about my bills
+    - where do I view my bills?
+    - ask an agent how to view my fucking bill
+    - I didn't receive my bills, how do I check them?
+    - I can't find my invoices, what can I do to view them?
+    - can you give me information about my invoices?
+    - where do I check my bill?
+    - I want to check my bill
+    - I didn't receive my invoice, what can I do to see it?
+    - where do I view my invoices?
+    - i needc niformation about my invoice, please
+    - I didn't receive my bills, what can I do to check them?
+    - I want informatrion avout my bills
+    - i wanna view my bills, what can i do?
+    - could you ask an agent to provide information about my bills, please ?
+    - I want to see my bills
+    - I didn't receive my invoice and I want to view it
+    - i can't find my bill , i need help viewing it
+    - i can't find my invoices and i wanna check them
+    - I can't find my invoices, help me view them
+    - I didn't receive my bill, what should I do to see it?
+    - i can't find my bill, what do i have to do to see it?
+    - can i view my bills?
+    - I lost my bill, check it
+    - I didn't receive my bills, how do I view them?
+    - I lost my bills, what should I do to see them?
+    - I didn't receive my invoice, help me check it
+    - I didn't receive my bills, can you check them?
+    - please, can u ask an agent where i could heck my bill?
+    - I want to check my bill, what do I have to do?
+    - I can't find my invoice, can I chedk it?
+    - ask an agent where i can see my bills , please
+    - I can't find my invoice, help me see it
+    - can you show me my ibll ?
+    - I can't finde my bills, how can I see them?
+    - how to check my invoices
+    - I lost my bills, I need help viewing them
+    - I lost my bills and I want to check them
+    - how can I view my bills?
+    - how to view my bills
+    - I didn't receive my invoice and I want to check it
+    - can I check my bill?
+    - I didn't receive my invoices, could you check them, please?
+    - i lost my inboices, what do i have to do to see tem?
+    - can u ask an agent if i can view my invoice?
+    - i didn't receive my invoice, can u view it?
+    - i lost my bills, i needd help viewing them
+    - I can't find my invoice, I need help checking it
+    - I lost my bills, what can I do to see them?
+    - I can't find my bklls and I want to check them
+    - I didn't receive my bill, what do I have to do to view it?
+    - i can't find my bills, can u show them?
+    - can u ask an agent were to see my invoice?
+    - could u ask an agent where i can check my fucking invoices, please?
+    - I can't find my invoice, how do I view it?
+    - information about my bill
+    - I want to see my bill, what should I do?
+    - i can't find my fucking invooice, could y view it, please?
+    - i didn't receive my fucking invoices, can i check them?
+    - I can't find my bills and I want to view them
+    - can you provide information about my invoice?
+    - i wanna see my bills, can u help me?
+    - could you ask an agent to show me information about my invoices?
+    - i lost my bills, what do i have to do to see them?
+    - I didn't receive my bill, can I see it?
+    - how to view my invoice
+    - ask an agent where I could check my invoices, please
+    - I wan to view my bills, what can I do?
+    - I lost my bill, can you show it?
+    - I didn't receive my invoice, I need help seeing it
+    - ask an agent how to check my fucking bill, please
+    - I want to view my invoice
+    - i want to check my invopice, what can i do?
+    - how do I see my bills?
+    - I lost my invoice, acn I check it?
+    - I lost my bills, how do I see them?
+    - could u ask an agent if i can see my invoices?
+    - I lost my bill, help me see it
+    - I can't find my invoice, helpo me check it, please
+    - I can't find my invoice, can you view it?
+    - can i see my invoices?
+    - I want information about my invoices
+    - I didn't receive my invoices, help me view them
+    - I lost my invoice, show it
+    - I can't find my bill and I want to see it
+    - I didn't receive my bills, how can I check them?
+    - I can't find my bills, what do I have to do to check them?
+    - I lost my invoicews, how do I see them?
+    - check my bill
+    - I didn't receive my bills, how can I see them?
+    - check my bills
+    - i didn't receive my bill and i want to see it, please
+    - I didn't receive my invoices, what can I do to see them?
+    - I didn't receive my bill, can I view it?
+    - i  want to see my invoice, whaty should i do?
+    - I didn't receive my invoices, can I check them?
+    - I lost my invoices, what should I do to see them?
+    - I didn't receive my bills, I need help seeing them
+    - I can't find my fucking bills, can you view them?
+    - i lost my bills and i want to see them
+    - i can't find my bills, check them
+    - I lost my invoices , what do I have to do to see them?
+    - could u ask an agent where to view my fucking bills, please?
+    - i want to check my invoices, what do i have to do?
+    - where canI seemy bill?
+    - I lost my bill, how can I check it?
+    - I lost my bills, help me view them
+    - can I view my invoice?
+    - I didn't receive my bills, how do I see them?
+    - i lost my bioll, what can i do to view it?
+    - can I view my bill?
+    - I lost my bills, how do I check them?
+    - I lost my invoices, what do I have to do to view them?
+    - I want to see my invoice, can you help me?
+    - I want to view my invoice, can you help me?
+    - I can't find my bill, what should I do to check it?
+    - I lost my invoices, how do I view them?
+    - I didn't receive my invoice, view it
+    - please, can you ask an agent how to check my bills?
+    - I can't find my invoices, how do I check them?
+    - I want to check my invoices, what do I have to do?
+    - I can't find my fucking invoices and I would like to view them
+    - I need help vieing my invoices
+    - can u give me information about my invoices?
+    - I need help checking my bills
+    - where can I check my invoices?
+    - how to see my bills
+    - I can't find my invoice, how can I check it?
+    - I need information about my invoice
+    - I didn't receiove my bill, help me view it
+    - i lost my bills, what should i do to see them?
+    - can i check my invoices?
+    - i didn't receive my bills, what do i have to do to check them?
+    - I lost my invoices, what should I do to check them?
+    - i can't find my invoices, can u view them?
+    - can u show me my bills?
+    - i lost my invoices, how can i view them?
+    - i can't find my invoice, i need help seeing it, please
+    - can i view my invoice?
+    - can you check my invoices?
+    - I can't find my invoice, what should I do to see it?
+    - I lost my invoices, show them
+    - I need help seeing my bills
+    - I lost my invoices, how can I see them?
+    - I lost my invoice, can you show it?
+    - I wolud like to see my bill, hat can I do?
+    - I lost my bill and I want to view it
+    - i didn't receive my bills, can i see them?
+    - i wanna check my invoices , what can i do?
+    - I didn't receive my bills, can I see them?
+    - please, could u ask an agent how to check my bill?
+    - I can't find my invoice, can you check it?
+    - please, could u ask an agent to give me information about my invoice?
+    - I didn't receive my invoice and I want to see it
+    - ask an agent to check my invoices
+    - I can't find my invoice, what do I have to do to check it?
+    - i lost my billp, can u show it?
+    - i can't find my bills and i wanna see htem
+    - I can't find my invoices, what ccan I do to see them?
+    - how can I check my bill?
+    - show me my invouce
+    - i didn't receive my bill, help me see it
+    - i can't find my bill, how could i check it?
+    - please, could you ask an agent how I could see my fucking bill?
+    - I can't find my invoices, help me check them
+    - i lost my invoice and i wanna check it
+    - I didn't receive my bill, help me see it
+    - I lost my invoices, check them
+    - i lost my invoice , how do i check it?
+    - I lost my bills, what do I have to do to view them?
+    - I can't find my bill, I need help seeing it
+    - i can't find my bill, what do i have to do to view it?
+    - i can't find my invoice, what can i do to check it?
+    - I lost my bills, view them
+    - ask an agent how i can check my invoice
+    - could u ask an agent where i could see my fucking invoice?
+    - I didn't receive my bills, can you show them?
+    - where to viewmy invoices
+    - I want to see my bills, what can I do?
+    - where can I see my invoices?
+    - help me check my bill
+    - I lost my bill, can you view it?
+    - i can't find my bills, can i check them?
+    - i can't find my invoices and i want to see them
+    - I lost my invoices, I need help viewing them
+    - I can't find my bill, what do I have to do to check it?
+    - can i see my invoice?
+
+- intent: check_payment_methods
+  examples: |
+    - ask an agent where to see their payment options, please
+    - where can i view your payment methods?
+    - can you tell me if I can make a payment with Master Card?
+    - I want to know if I can pay with credit cars
+    - can I chewck your payment options?
+    - I need help viewing your payment methods
+    - can I pay with card?
+    - I want to know if I could make a payment with card, please
+    - what are your fucking payment options?
+    - can I pay with Amex?
+    - can you check your payment options?
+    - can u ask an agent where i can see their payment options, please?
+    - can I pay with credit card?
+    - tell me if  I can ppay with Amex
+    - ask an agent if i can make a payment with Master Card
+    - ask an agent what their payment options are
+    - how could i view your payment options?
+    - check your payment methods
+    - i want to see your payment options, can u help me?
+    - can you tell me if I can make a payment with card?
+    - where can I see your payment options?
+    - where to check your payment methods
+    - how can I view your payment methods?
+    - I want to see your payment options
+    - can u find information about your payment methods?
+    - can I see your payment options?
+    - I would like to see your payment methods, what should I do?
+    - I'd like to see your payment methods
+    - I want to see your payment methods, what do I have to do?
+    - i want information about your payment methods
+    - how do I see your payment methods?
+    - how do i see your payment methods?
+    - where can I view your payment options?
+    - could you ask an agent where I can see their payment options?
+    - can you check your payment methods?
+    - can you tell me if I can pay with credit card?
+    - could you ask an agent if I can view their payment options?
+    - I want to know what payment options you accept
+    - how do I view your payment methods?
+    - where do i view your payment methods?
+    - ask an agent if i can make a payment with Amex
+    - tell me if I can pay with Master Card
+    - i need information about your payment methods
+    - tel me if I acn pay with card
+    - i want to see your payment options
+    - how to check your payment methods
+    - I need information about your fucking payment options, please
+    - can u show me information about your paymnet options?
+    - how do I check your payment options?
+    - help me check your payment options
+    - where to view your payment methods
+    - could you ask an agent to give me information about their payment methods?
+    - i wanna see your payment options, what can i do?
+    - where do I view your payment options?
+    - could u ask an agent how i can view their fucking payment options?
+    - can I pay with Master Card?
+    - id like to see your payment methods,what can i do?
+    - can you tell me if I can make a payment with credit card?
+    - can u give me information about your payment methods?
+    - can you tell me what payment methods  you accept?
+    - I need help seeing your payment options
+    - how do I view your payment options?
+    - please, ask an agent if I can pay with Master Card
+    - please, could you ask an agent how I could view their fucking payment options?
+    - I want to know if I can pay  with Master Card
+    - could u ask an agent if i could view their apyment methods, please?
+    - can I make a payment with card?
+    - how could I view your fucking payment options?
+    - ask an agent where to see their payment methods
+    - I need information about your payment methods
+    - I want to know if I can make a payment with Visa
+    - I want to check your payment options
+    - i want to know if i can pay with credit card
+    - where do I view your payment methods ?
+    - i wanna see your payment options, can u help me?
+    - can u ask an agent to find information about there payment methods ?
+    - help me view your payment options
+    - what are your payment options?
+    - can you show me your payment methods?
+    - ask an agent where to see their fucking payment options, please
+    - can you tell me if I can pay with Amex?
+    - I need information about your payment option
+    - I need help seeing your payment methods
+    - tell me what your payment options are
+    - can u show me information about your payment methods?
+    - can you tell me if I can pay with Master Card?
+    - can u ask an agent if i could make a payment with Amex, please?
+    - could you ask an agent how I can check their payment methods, please?
+    - what are your payment methods?
+    - where can I view your payment methods?
+    - can you ask an agent to check their fucking payment options, please?
+    - where do i see your payment options?
+    - where do i see your payment mehods?
+    - how to view your payment option
+    - could you ask an agent ib I can check their payment options?
+    - I want to know if I can make a payment with credit card
+    - where to see your payment methods
+    - can u ask an agent how i can see there payment methods?
+    - can u ask an agent where to see their payment methods?
+    - can u ask an agent to show me their payment methods?
+    - i want to see your payment methods, what do i have to do?
+    - show me your paymebt methods
+    - help me see your payment options
+    - please, could u ask an agent where i can view their fucking payment methods ?
+    - i wanna know if i can make a payment with Visa
+    - I want to know if I can make a payment with Master Card
+    - i wanna check your payment methods, can u help me?
+    - ask an agent where i can view their payment methods
+    - how can i check your payment methods?
+    - could u ask an agent about their payment methods?
+    - I want to see your payment methods, what can I do?
+    - what payment options do you accept?
+    - tell me what payment methodsyou accept
+    - I want to view your payment options
+    - could u ask an agent if i can check their payment methods?
+    - I want to know if I can make a payment with card
+    - ask an agent what payment options they accept
+    - i want to know if i can make an payment with credot card
+    - I want to check your payment methods, can you help me?
+    - how can I see your payment methods?
+    - can you give me information about your payment options?
+    - I want to view your payment methods, what can I do?
+    - help me view your payment methods
+    - ask an agent for information about their payment options
+    - can you show me your payment options?
+    - how can i view your fucking payment methods?
+    - tell me if I can pay with Visa
+    - can u ask an agent for information about their payment methods?
+    - tell me if I can make a payment with Amex
+    - tell me if I can make a payment with Master Card
+    - show me your payment options
+    - I want to see your payment options, what should I do?
+    - tell me if I can pay with credit card
+    - could I view yoru payment options?
+    - what payment methods do you accept?
+    - can u ask an agent how i fan check their payment methods?
+    - I want to know what your payment options are
+    - tell me if I can make a payment with card
+    - can u ask an agent if i can pay with card?
+    - I want to check your payment options, can you help me?
+    - can i make a payment with Amex?
+    - where can I check your payment methods?
+    - how to view your payment methods
+    - can u ask an agent if i can pay with Visa?
+    - how can i see your payment methods?
+    - I want to view your payment methods, what do I have to do ?
+    - I want to know if I can make a payment with Amex
+    - I want to view your payment options, what  should I do ?
+    - ask an agent where I can view their payment options, please
+    - can u ask an agent if i can pay with Master Card?
+    - I want to check your payment options, what do I have to do?
+    - o need help seeing your payment methods
+    - I need help viewing your payment options
+    - how can I view your payment options?
+    - can you tell me what your payment methods are?
+    - tell me if I can make a payment with Visa
+    - can I check your payment methods?
+    - I want to check your payment options, what should I do?
+    - I need help checking your apyment options
+    - I need help checking your fucking payment methods, please
+    - id like to check your payment methods, what do i have to do?
+    - where to see your pyment options
+    - I want to know what payment methods you accept
+
+- intent: check_refund_policy
+  examples: |
+    - I'm interested in your reimbursement polivy
+    - i wanna see your refund policy, can u help me?
+    - where do I see your money back policy?
+    - show me yoru moneh back policy
+    - I want to check your money back policy, what can I do?
+    - check your refund policy
+    - please, could u ask an agent where to see their money back policy?
+    - I want to see your reimbursement policy
+    - please, can you ask an agent to check their reimbursement policy?
+    - I want to check your refund policy, what should I do?
+    - I want to see your refund policy, can you help me?
+    - i want to view your refund policy, can u help me?
+    - I want to check your money back policy, can you help me?
+    - can i see your money back guarantee?
+    - do I get a full refund in case I cancel my tickets?
+    - i need help checking your refund policy
+    - ask an agent ot show me their refund policy
+    - please, could u ask an agent if i could see their reimbursement policy?
+    - culd u ask an agent where i could check their refund policy?
+    - can you ask an agent how I could check their refund policy, please?
+    - I don't know anything about your money back policy and I want information about
+      it
+    - how can I see your refund policy?
+    - can u ask an agent how i can see their money back policy?
+    - can u give me information about your reimbursement policy?
+    - how do I view your refund policy  ?
+    - id like to view your money back guarantee, can u help me?
+    - I'm interested in your money back guarantee and I want information about it
+    - where do I check your reimbursement policy ?
+    - ask an agent where I could see their refund policy
+    - where do I see your money back guarantee?
+    - where do I view your money back policy?
+    - I'm interested in your money back guarantee
+    - I want information about your mnoney back guarantee
+    - I'm  interested in your money back policy
+    - I don't know anything about your money back guarantee and I want to know about
+      it
+    - I want to check your refund policy, what do I have to do?
+    - ask an agent where i can see their reimbursement policy
+    - I'm interested in your refund policy, tell me about it
+    - where can I see your refund policy?
+    - I don't know anything about your money back policy and I need information about
+      it
+    - can you show me your money back policy, please?
+    - I don't know anything about your money back policy and I want to know about it
+    - I need help checking your money back policy, please
+    - can u ask an agent how i could see their refund policy?
+    - could u ask an agent if i could see their fucking money back policy, please?
+    - refund policy
+    - please, can you ask an agent to find information about their reimbursement policy?
+    - howto check your money back policy
+    - I need help checking your money back policy
+    - could u ask an agent if i could see their reimbursemenmt policy?
+    - can I see your refund policy?
+    - please, ask an agent to give me information about their money back guarantee
+    - I want to view your money back guarantee, what should I do?
+    - i want to view your money back guarantee, what can i do?
+    - I want to see your reimbursement policy, what should I do?
+    - can you tell me if service fees are refundable?
+    - I'm interested in your money back guarantee, tell me about it, please
+
+- intent: complaint
+  examples: |
+    - ask an agent how i can make a consumer complaint for a service
+    - I want to submit a complaint, what do I have to do?
+    - I'm discontent with the service, how caj I submit a consumer complaint?
+    - im not happy with the service, make a complaint, please
+    - where to make a consumer complaint for a service
+    - I need help making a complaint
+    - i wanna lodge an complaint fvor a service
+    - please, ask an agent how to make a complaint
+    - im discontent with the service, can i file a consumer complaint?
+    - i want to submit a complaint fora service, what do i have to do?
+    - I don't like the service, submit a complaint
+    - I want to submit a consumer complaint for a service, can you help me?
+    - I'm discontent with the service, how do I make a consumer complaint?
+    - I'm discontent with the service, help me file a complaint
+    - I'd like to submit a consumer complaint for a service, what should I do?
+    - I don't like the service, can I submit a consumer complaint?
+    - I'm not happy with the service, can you make a complaint?
+    - I'm not happy with the service, I need help lodgnig an consumer complaint
+    - ask an agent how i can file a complaint
+    - i want to make a consumer complaint for a service, can u help me?
+    - I'm discontent with the service, what can I do to submit a complaint?
+    - where do I lodge a complaint?
+    - I don't like the service, how can I make a complaint?
+    - I'm discontent with the service, what should I do to file a consumer complaint?
+    - I want to make a complaint for a service,what do I have to do?
+    - I don't like the service, I need help submitting a complaint
+    - how to file a complaint
+    - help me file a complaint for a service
+    - I'm discontent with the servbice, what do I have to do to make a complaint?
+    - I'm not happy with the service, can I lodge a consumer complaint?
+    - I don't like the service, what can I do to submit a complaint?
+    - I'm discontent with the service and I want to  submit a consumer complaint
+    - I'm discontent with the service, what should I do to make a complaint?
+    - can I file a complaint for a service?
+    - I'm discontent with he service, I need help filing a consumer complaint
+    - i want to make a complaint, can u help me?
+    - I want to lodge a consumer complaint, what can I do?
+    - i wanna submit a fucking complaint, could u help me?
+    - I'm discontent with the service, help me make a complaint
+    - I'm discontent with the service and I want to submit a complaint
+    - I'm not happoy with the service, file a cosumer complaint, please
+    - I don't like the service, I need help lodging a consumer complaint
+    - I don't like the service, what do I have to do to file a complaint?
+    - can i make a complaint for a service?
+    - I'm not happy with the service, help me submit a consumer complaint
+    - where to file a consumer complaint for a service
+    - I want to file a complaint for a sevrice , what can I do?
+    - im not happy with the service , what can i do to submit an complaint?
+    - I want to file a consumer complaint, what should I do?
+    - i want to file an consumer complaint for a service, can u help me?
+    - I'm not happy with the service, what do I have to do to submit a consumer complaint?
+    - ask an agent where to file a fucking complaint
+    - I'm discontent with the service, can you fioe a complaint?
+    - could you ask an agent if I can lodge a complaint for a service, please?
+    - I'd like to lodge a complaint, what do I have to do?
+    - I don't like the service, could you file a consumer complaint, please?
+    - i want to lodge a complaint, can u help me?
+    - I'm not happy with the service, help me file a consumer complaint
+    - how can I make a complaint for a srrvice?
+    - I'm discontent with the service, what can I do to file a consumer complaint?
+    - i dont like the service, how do i submit a complaint?
+    - I'm discontent with the service, what should I do to file a complaint?
+    - im not happy with the service and i want to submit a fucking complaint, please
+    - I want to submit a complaint for a service, can you help me?
+    - where do i lodge a consumer complaint for a service?
+    - im not happy with the service, what do i have to do to submit a consumer complaint?
+    - I don't like the service, can you file a complaint?
+    - I don't like the service, what should I do to submit a complaint?
+    - I want to lodge an complaint, can you help me?
+    - I'm discontent with the service, help me file a consmuer complaint
+    - i dont like the service, can i submit a consumer complaint?
+    - I'm discontent with the service, can you make a consumer complaint?
+    - how can I lodge a consumer complaint for a service?
+    - im not happy with the service, lodge a consumer complaint
+    - I want to file a consumer complaint for a service, what do I have to do?
+    - I'm not happy with the service, how can I submit a consumer complaint?
+    - I want to make a complaint, what should I do?
+    - I don't like the service, can you lodgea consumer complaint?
+    - where to lodge a consumer complaint
+    - I dn't like the service, make a consumer complaint
+    - im discontent with the service, submit a consumer complaint
+    - can u ask an agent where to lodge a consumer complaint for a service?
+    - I don't like the service, help me file a complaint
+    - ask an agent where to file aconsumer complaint for a service
+    - can I lodge a complaint?
+    - help me make a consumer complaint for a service
+    - I'm not happy with the service, what do I have to do to lodge a complaint?
+    - i dont like the service, what should i do to file a complaint?
+    - I'm not happy with the service and I want to submit a complaint
+    - I don't like the service, make a complaint
+    - I'm discontent  with the service, how do I file an consumer complaint?
+    - I don't like the service, can I submit a complaint?
+    - i dont like the service, file a consumer complaint
+    - I'm discontent with the service, I need help filing a complaint
+    - I don't like the service, help me lodge a complaint
+    - I'm not happy with the service, what should I do to lodge an complaint?
+    - ask an agent to file a complaint
+    - I'm discontent with the service, can I submit a consumer complaint?
+    - I am discontent with the service, I need help lodging a complaint, please
+    - I'm discontent with the service and I want to lodge a complaint
+    - help me make a complaint
+    - I don't like the service, can you file a consumer complaint?
+    - I want to lodge a consumer complaint for a service, what can I do?
+    - I'm not happy with the service, submit a consumer complaint
+    - I'm discontent with the service, can you submit a complaint?
+    - I'm discontent with the service, what do I have to do to ldge a complaint?
+    - im discontent with the service, help me file a consumer complaint
+    - could you ask an agent to file a complaint, please?
+    - I'm discontent with the service, help me submit a consumer complaint
+    - I want to submit a consumer complaint, what can I do?
+    - im not happy with the service, how can i make a consumer complaint?
+    - I want to lodge a complaint
+    - I don't like the service, help me make a consumer complaint
+    - I'm discontent with the service, what can I do to make a consumer complaint?
+    - ask an agent how to file a complaint for a service
+    - I need help filing a complaint
+    - im discontent with the service, can i make a complaint?
+    - I want to file a complaint, can you help me?
+    - I want to lodge a complaint, what should I do?
+    - I'm discontent with the service, can you submit a consumer complaint?
+    - im not happy with the service, what do i have to do to file a complaint?
+
+- intent: contact_customer_service
+  examples: |
+    - i need information and i wanna contact customer support
+    - I want to contact Customer Support
+    - I need information about the email address of the Customer Support
+    - I need information, what do I have to do to call Customer Service?
+    - call Client Service
+    - is there a free phone no to contact Customer Support?
+    - I want to know if there is a free phone number to contact Customer Support
+    - i need information, can u send an email to customer support?
+    - I need information, what should I do to contact Customer Service?
+    - I want to speak with Client Service
+    - i wanna see the hours of client service
+    - i wanna see the email address to contact Customer Service
+    - I ant to know what the mail address of the Customer Support is
+    - ask an agent what the mail to contact customer service is
+    - what's the email to contact Client Service?
+    - I want information, what do I have to do to contact Client Service?
+    - i have a question, what can i do to speak with client service ?
+    - i want information, what do i have to do to speak with fucking customer service?
+    - tell me what the number to contact Customer Service is
+    - I want to see the free number of Customer Support
+    - show me the mail to contactt Client Service
+    - can u give me information about the mail of the Customer Service?
+    - can you tell me the number to contact Client Service, please?
+    - how to call Customer Support
+    - please, i wanna know what the email address to contact customer service is
+    - contact customer service
+    - please, could u show me the mail address of customer service?
+    - i need information and i want to contact client service
+    - i want to see the email to contact Customer Support
+    - could you show me the fucking mail address of Customer Service, please?
+    - i wanna know what the email address of the Customer Support is
+    - I want information, could you speak with Customer Support?
+    - I need information, what should I do to contact Client Service?
+    - I want to talk to Customer Support
+    - tell me what the free number of Client Service is
+    - could u show me information about the mail of the Client Service, please?
+    - i want to see the email address to contact customer service
+    - I want information, what can I do to speak with Customer Support?
+    - can you tell me what the free phone number to contact Customer Service is?
+    - can you tell me the number to contact customer support?
+    - what'sthe email of the Customer Service?
+    - could you show me information about the email address of the Client Service, please?
+    - tell me what the free number of Customer Service is
+    - I want information, can you speak with Customer Service?
+    - what's the free number of Customer Support?
+    - can you show me information about the mail address of the Client Service?
+    - can you show me the fucking free phone number of Customer Support?
+    - ask an agent what the fucking email address to contact Customr Support is, please
+    - I need information , what can I do to send an email to Customer Support?
+    - what's the free phone number of Customer Support?
+    - can you tell me the email address to contact Customer Service?
+    - can you tell me the email to contact Customer Support?
+    - i want to know what the free numbr of client service is
+    - information about the email of the Client Service
+    - i have a question, can i speak with client service?
+    - I need information and I would like to call Customer Service, please
+    - I have a question, can you send an email to Customer Service?
+    - I have a question, what can I do to call Customer Service?
+    - I want information about the email address of the Customer Service
+    - I want to see the free phone number to contact Customer Service
+    - I have a question, how can I talk to Customer Support?
+    - i have a question, can u speak with client service?
+    - i want information, how do i talk to client service?
+    - I want to see the mail to contact Customer Support
+    - can you tell me the mail to contact Client Service, please?
+    - send an email to Client Service
+    - ask an agent how to contact customer support
+    - how can i talk to client service?
+    - I want information, how do I send an email to Customer Service?
+    - could u ask an agent what the mail to contact customer service is?
+    - what's the mail of Client Service?
+    - can you send an email to Customer Service?
+    - i wanna know what the free phone number to contact Customer Service is
+    - please, can you show me information about the mail of the Customer Service?
+    - can you tell me what the free phone number of customer support is?
+    - what's the free phone number to contact Client Service?
+    - show me the mail address to contact Customer Service
+    - i  wanna speak with customer support
+    - i need information and i want to spaek with client service
+    - I have a question , what do I have to do to call Customer Support?
+    - tell me what the mail of Customer Support is
+    - I have a question, how can I send an emaul to Customer Service?
+    - I have a question and I want to contact Client Service
+    - I have a question, talk to Customer Service
+    - I need information, help me talk to Customer Service
+    - I have a question, speak with Customer Service
+    - ask an agent how i can send an email to customer service
+    - tell me what the phone number to contact Customer Service is
+    - I have a question, can I contact Customer Service?
+    - I want to see the free phone number of Customer Service
+    - i have a question and i wanna call client service
+    - I have a question, what should I do to call Customer Service?
+    - can you tell me what the fucking phone number to contact Client Service is, please?
+    - id like information, what can i do to contact client service?
+    - can you tell me what the free phone number of Customer Suupport is?
+    - can u ask an agent if there is a free phone number to contact client service?
+    - what's the phone numner of Client Service?
+    - I want information, what do I have to do to call Customer Service?
+    - i want to know what the number to contact customer support is
+    - tell me what the phone no of Customer Service is
+    - I want information, talk to Customer Support
+    - i need information, what do i have to do to speak with customer support?
+    - I have a question, how do I speak with Customer Service?
+    - ask an agent what the fucking phone number of Customer Service is, please
+    - please, can you tell me what the email address of client service is?
+    - show me the email of the Customer Support
+    - I want information, what should I do to call Customer Service?
+    - can I speak wkth Client Service?
+    - can I call Customer Service?
+    - i havd a question and i wanna speak with customert support
+    - I need information, send an email to Client Service
+    - I have a question, speak with Customer Support
+    - I have a question, help me send an email to Customer Service
+    - could u ask an agent what the hours of Customer Serviceare?
+    - I want informastion and I want to call Customer Support
+    - whats the mail to contact Customer Service?
+    - please, can u ask an agent what the fucking phone number of Customer Service is?
+    - i need information, how do i call customer support?
+    - tell me what the free phone number to contact Customer Service is
+    - I need  help speaking with Customer Service
+    - help me speak with Customer Service
+    - I have a question, what can I do to speak with Client Service?
+    - I need information, can I call Customer Support?
+    - could you tell me the fucking phone number of customer support?
+    - could u show me the free phone number of customer service, please?
+    - i need information, how could i contact customer service?
+    - please, i want to know what the fucking email address of client service is
+    - tell me what the email of Customer Service is
+    - please, could u ask an agent if i could send an email to client service?
+    - is there a free number to contact Client Service?
+    - i need information, how can i talk to client service?
+    - I need information, how do I call Customer Support?
+    - i want to know what the mail address to contact customer service is
+    - can you tell me what the mail of the Customer Service is?
+    - I want to see the hours of Customer Support
+    - id like information and i want to send an email to fucking customer support, please
+    - please, show me the mail address of client service
+    - can u ask an agent how to call customer service?
+    - whats the mail address to contact client service?
+    - i need information, what can i do to contact customer support?
+    - i want to see the email to contact client service
+    - i need information about the mail address of the Client Service
+    - can you tell me what the mail address to contact customer service is?
+    - how can I send an email to Customer Service?
+    - how do I send an mail to Client Service?
+    - I have a question, can I speak with Customer Service?
+    - can you show me information about the email address of the Customer Support?
+    - I have a question, how can I call Client Service?
+    - I would like information, how do I contact Customer Service?
+    - I need information, I need help speaking with Customer Service
+    - i wanna know what the email to contact client service is
+    - show me the email address of the Customer Service
+    - I would like information, can I talk to Customer Support?
+
+- intent: contact_human_agent
+  examples: |
+    - could I talk to a human?
+    - you're not helping, how do I contact a human?
+    - I acn't understand you, what can I do to talk to a human?
+    - u are not helping, can u speak with a human agent?
+    - can u contact a human?
+    - you arent helping, what do i have to do to speak with someone?
+    - you aren't helping, help me contact a human
+    - you arent helping, what should i do to contact a human?
+    - you're not helping, contact someone
+    - I don't understand you and I want to speak with a human
+    - you are not helping and I would like to speak with a human agent
+    - i dont understand you, can u talk to a human?
+    - u are not helping and i want to contact a human
+    - I can't understand you, how can I contact a person ?
+    - I don't understand you, how do I contact a person?
+    - I don't understand you, can you contact fucking someone?
+    - youre not helping, how can i contact a human agent?
+    - I can't understand you, can you talk to a human?
+    - you're not helping, can I contact someone?
+    - you arent helping, what can i do to talk to a human?
+    - you're not helping, help me talk to a human
+    - you're not helping and I want to contact a human agent
+    - I need help speaking with a human agent
+    - I don't understand you, what should I do to contact a person ?
+    - you arent helping, what do i have to do to speak with a human agent?
+    - i dont understand you, help me talk to fucking someone, please
+    - you aren't helping, what can I do to contact a human agent?
+    - I can't understand you, how can I speak with a human?
+    - you aren't helping, how do I talk to someone?
+    - you aren't helping, how can I talk to someone?
+    - can u contcat someone?
+    - how do i contact a human?
+    - u are not helping, how do i talk to someone?
+    - can you speak with a human agent?
+    - help me contact a person
+    - I can't understand you, what do I have to do to talk to a person?
+    - o want to contact a human
+    - youre not helping, can u contact a human agent?
+    - you arent helping, i need help talking to a human, please
+    - you're not helping, what should I  do to talk to a human agent?
+    - you're not helping, help me contact someone
+    - you're not helping, what do I have to do to talk to a person?
+    - I don't understand you and I want to speak with someone
+    - you're not helping, how can I contact a person?
+    - I can't understand you, can you talk to a human agtent?
+    - I don't understand you, I need help talking to a human agent
+    - u are not helping, can u contact someone?
+    - you aren't helping, can you speak with someone?
+    - you arent helping, can i speak with a human agent?
+    - I can't understand you, could you contact fucking someone?
+    - I don't understand you, how can I contact a human?
+    - can you talk to a person?
+    - how to contact a person
+    - I don't understand you, I need help talking to a human
+    - you're not helping, what do I have to do to talk to a human?
+    - you're not helping, what should I do to talk to a human?
+    - how doI speak with someone?
+    - you're not helping, how can I talk to someone?
+    - I can't understand you, I need help talking to a person
+    - you're not helping, how can I talk to a person?
+    - you aren't helping, can you contact a human agent?
+    - you aren't helping, can I contact a person?
+    - I can't understand you, can you speak with a person?
+    - i dont understand you , how do  i contact a person?
+    - I don't understand you and I'd like to talk to fucking someone
+    - i dont understand you, i need help talking to someone, please
+    - you're not helping, help me talk to a person
+    - I can't understand you, can I speak with a person?
+    - I can't understand you, what should I do to talk tl a person?
+    - you arent helping and i want to speak with a fucking human agent, please
+    - how to speak with a human
+    - you  aren't helping, what should I do to contact a human agent?
+    - i need help speaking with a human agent
+    - u are not helping, can u talk to a human?
+    - you aren't helping, what can I do to talk to a human agent?
+    - you aren't helping, how can I talk to a person?
+    - you aren't helping, what can I do to talk to a person?
+    - i cant understand you and i want to contact a person
+    - you arent helping and i wanna talk to a human, please
+    - i dont understand you and id like to talk to a person, please
+    - you're not helping, I need help speaking with someone
+    - you arent helping, help me contact someone
+    - you aren't helping, what do I have to do to speak with a person?
+    - I can't understand you and I want to speak with a human
+    - help me speak with a person
+    - please, i want to know if there is any fucking person available
+
+- intent: create_account
+  examples: |
+    - I don't have an online account, what do I have to do to register?
+    - can you tell me if i can regisger two accounts with a single email address?
+    - I have no online account, open one, please
+    - could you ask an agent how to open an account, please?
+    - i want an online account, create one
+    - i want an account, i need help opening one
+    - tell me if I can register  two online accounts with the same email
+    - i want to know if i could create two profiles with the same email address
+    - can you tell me if i can create more than one fucking user account with the same
+      email?
+    - were to create an onlind account
+    - i wanna know if i can create more than one user account with a single email address
+    - can I create two online accounts with a single email?
+    - I don't have a user account, how do I create one?
+    - I have no user account, what do I have to do to create one?
+    - I want to know if I can own several accounts
+    - I don't have a profile , can I creae one?
+    - I don't have an online account, I need help creating one
+    - I want to know if I can register several user accounts with the same email address
+    - I want an account, what do I have to do to open one?
+    - tell me if I could register two user accounts with a single email address
+    - I don't have a account, I need help opening one
+    - I haven't got a user account, can you register?
+    - I need a user account and I want to create one
+    - I need an online account, how can I open one?
+    - I don't have a profile, how do I create one?
+    - tell me if I can register two accounts with a single email address
+    - I haven't got an online account, help me open one
+    - ive got no online account, what can i do to register?
+    - I want to know if I can register several profiles with the same email address
+    - i need help registering
+    - i want to know if i can have several accounts
+    - I need an account, I need help opening one
+    - help me open an account
+    - i want a profile, can u create one?
+    - can I create several user accounts with a single email?
+    - can I create several online accounts with the same email?
+    - how can I create a profile?
+    - tell me if I can register two profiles with a single email
+    - can I create more than one online account with the same email address?
+    - I need an online account, how do I create one?
+    - I want an account, I need help creating one
+    - can you tell me if I can register two online accounts with a single email address?
+    - I need a user account, open one
+    - tell me if I can create more than one account with the same email address
+    - I haven't got a user account, create one
+    - can  I create a user account?
+    - i want to know if i can create two profiles with a single emal address
+    - can i register more than one account with a single email?
+    - I haven't got an online account, open one
+    - I want to know if I can create several accounts with a single email
+    - tell me if I can register more than one account with a single email address
+    - i want to know if i can register two online accounts with a single email
+    - iwant to know if i could register two accounts  with the same email address
+    - I want to know if I can register two profiles with the same email address
+    - I've got no online account, help me create one
+    - I want an online account and I want to open one
+    - i wanna know if i can register more than one account with a single email
+    - i want to know if i can register two accounts with a single email address
+    - can I create two user accounts with the same email address?
+    - i wanna know if i can register two profiles with the same email
+    - ive got no fucking user account, open one, please
+    - can i create moe than one user account with a single email?
+    - can I create two profiles with a single email address?
+    - can you tell me if i can own several user accounts?
+    - I have no user account, how can I create one?
+    - I've got no online account, can I create one?
+    - i want to know if i can have more than one profile
+    - I have no user account, what should I do to register?
+    - I've got no user account, what should I do?
+    - I'd like a fucking user account and I want to create one
+    - I want a user account, can I create one ?
+    - tell me if I can register several profiles with a single email address
+    - I want to know if I can registger more than one account with the szme email
+    - can i register two accounts with a single email address?
+    - I want to know if I can register two accounts with the same email address
+    - I need a user account, what should I do to create one?
+    - i wanna know if i can craete several accounts with a single email
+    - tell me if I can create two user accounts with the asme email address
+    - i want a user account, how can i create one?
+    - can you tell me if I can create more than one profile with a single email address?
+    - i havent gott an online account and i want to registrr
+    - tell me if I can register more than one online account with the same email
+    - i dont have an account, help me create one
+    - i dont have a profile, can u help me?
+    - I don't have a user account, can you register?
+    - can i register several accounts with a single email address?
+    - can you tell me if i can create seevral online accounts wih the same email?
+    - can you tell me if I can have several accounts?
+    - please, could you tell me if i can create two fucking online accounts with the
+      same email?
+    - I don't have an account, how do I register?
+    - please, could you tell me if i can register more than one profile with a single
+      email address?
+    - I have no account, what do I have to do to register?
+    - i havet got a user account, how can i open one?
+    - I do not have a fucking account and I would like to create one, please
+    - please, I want to know if I can create several fucking user accounts with the
+      same email address
+    - can i create two profiles with the same email?
+    - ive gogt no online account, can u open one?
+    - I want to know if I can register two user accounts with a single email
+    - I want to know if I could own several profiles, please
+    - I've got no user account, what can I do to create one?
+    - I haven't got an online account, what should I do to register?
+    - i have no user account, i need help registering
+    - i havent got an online account, how can i register?
+    - I've got no user account
+    - i havent got a user account, what can i do?
+    - can I creae more than one online account with the same email?
+    - ive got no account, what should i do to open one?
+    - i havent got a profile, can i create one?
+    - I don't have a user account, can I register?
+    - can I register more than one online account with a single email address?
+    - can you tell me if i can register more than one profile with the same email?
+    - i wanna open a fucking online account, could u help me?
+    - id like a user account, what should i do to open one?
+    - I've got no online account, what should I do to register?
+    - I haven't got an online account, how do I register?
+    - can i create more than one account with the same email address?
+    - could you tell me if I can register two user accounts with a single email, please?
+    - can I create an account?
+    - can I register more than one profile with the same email address?
+    - tell me if I can register several profiles with the same email address
+    - i havent got a profile, what do i have to do to create one?
+    - ive got no profile, i need help creating one
+    - I haven't got an online account, what can I do?
+    - i want an online account and i want to open one
+    - I need an online account, can I open one?
+    - please, I want to know if I can register more than one online account with the
+      same email address
+    - I want to know if I can register several profiles with a single email
+    - can you tell me if i can create several online accounts with the same email address?
+    - i want to open a user account, what can i do?
+    - I have no user account, I need help registering
+    - I need a user account, how can I create one?
+    - i havent got an account and i wanna create one
+    - can i own more than one user account?
+    - I want to create an account, what do I have to do?
+    - i want to know if i can create two profiles with the same email
+    - I've got no account, what should I do to register?
+    - i wanna know if i can register several user accounts with a single email address
+    - can you tell me if i can create two accounts with the same email, please?
+    - can I register two profiles with a single email?
+    - tell me if I can register two online accounts with a single email address
+    - can I register several accounts with a single email address?
+    - can you tell me if I can register several profiles with the same email address?
+    - can i create more than one online account with the same email address?
+    - i wanna know if i can register two online accounts with a single email address
+    - please, ask an agent where to open an online account
+    - I don't have an account, what can I do to register?
+    - i need an account, can u open one ?
+    - I eant to know if I can create several online accounts with the same email address
+    - please, could u ask an agent to open a  fucking account?
+    - can you tell me if I can create several profiles with the same email?
+    - i want to know if i can create two profiles with the same email address
+    - I have no user account, what should I do?
+    - i dont have a user account, what should i do?
+    - I want to know if I can own several online accounts
+    - how to create an account
+    - I haven't got an noline account, can you open one?
+    - i need a profile, what should i do?
+    - I haven't got a user account, what should I do to create one?
+    - I don't have an online account, what should I do?
+    - tell me if I can register more than one account with a single email
+    - I haven't got a user account and I want to open one
+    - i dont have an accopunt , i need help creating one
+    - ask an agent if i can open an online account
+    - I need a profile, can I create one ?
+    - i have no user account, what should i do to create one?
+    - I have no profile, what should I do?
+    - I've got no online account, I need help registering
+    - i havent got an online account, create one
+    - can you tell me if i could register several user accounts with the same email,
+      please?
+    - I don't have a fucking profile and I'd like to create one
+    - I want to know if I can create two online accounts with the xame email address
+    - please, can you tell me if I could register several accounts with the same email
+      address?
+    - i want to know if i can register more than one account with the same email
+    - I need a profile, what can I do?
+    - I want to know if I can create two online accounts with the same email
+    - I have no acount, help me open one
+    - I want a user account, what should I do to create one?
+    - tell me if I can create more than one user account with a single email
+    - I need a profile, what do I have to do?
+    - I want to know if I can create several user accounts with the same email
+    - I need an online account, how can I create one?
+    - ask an agent where to create an account
+    - I've got no profile , what can I do to create one?
+    - i wanna know if i can create several fucking online accounts with a single email,
+      please
+    - can i have more than one user account?
+    - ive got no user account, what do i have to do?
+    - tell me if I can create two profiles with a single email address
+    - I habe no user account, what can I do to create one?
+    - i want to know if i canh register more than one account with a single email address
+    - i have no user account, can u register?
+    - tell me if I can create several profiles with the same email address
+    - I don't have a user account, what can I do to register?
+    - i want an online account, what can i do?
+    - can you tell me if i can create several online accounts with an single email?
+    - could you tell me if I could register several accounts with the same email, please?
+    - i dont have an account
+    - can I create several accounts with the same email address?
+    - could I register more than one user account with a single email?
+    - I need a user account, create one
+    - I want to register, can you help me?
+    - can you tell me if I can create more than one online account with the same email
+      address?
+    - please, i wanna know if i can register two accounts with the same email
+    - I hae o user account, I need help creating one
+    - can I register more than one account with a single email address?
+    - I've got no online account, what can I do?
+    - i wanna create an online account, what do i have to do?
+    - tell me if I can create more than one account with a single email address
+    - I want to know if I can create several usewr accounts with a single email aaddress
+    - ive got no user account, what can i do?
+    - how do I create a user account?
+    - can u ask an agent where to create a user account?
+    - I want an online account, what should I do?
+    - I've got no user account, I need help opening one
+    - I ahve no account, can I create one?
+    - I want an account
+    - I want a user account, help me create one
+    - I don't have an account, what do I have to do to open one?
+    - I don't have a fucking user account
+    - I want to create a profile, what do I have to do?
+    - I want to know if I can create two accounts with the same email address
+    - I need an account, can I create one?
+    - i want to know if i can create several fucking online accounts with the same email
+      address
+    - I need an user account, what can I do?
+    - how can I open a user account?
+    - where do I open an online account?
+    - I want to know if  I can register two profiles with a single email address
+    - I want to know if I can register more than one user account with the same email
+    - i want an account, how can i open one?
+    - please, could you tell me if i could create two user accounts with a single email?
+    - i want a user account, help me open one
+    - I don't have  a user account, what should I do to register?
+    - I want to know if I can register two accounts with a single email
+    - I need a profile, I need help creating one
+    - I want a user account, what do I have to do to create one?
+    - I want a user account, how can I create one?
+    - where do I register?
+    - I need an online account, what do I have to do to open one?
+    - I have no user account, how can I register?
+    - i dont have an account, how can i create one?
+    - can you tell me if i can register several accounts with a single email?
+    - i havent got an account, can i create one?
+    - can you tell me if I can create more than one profile with a single email?
+    - please, tell me if I could create several fucking online accounts with the same
+      email address
+    - I have no account, can you createw one?
+    - can you tell me if I can register more than one user account with a single email?
+    - I don't have an online account, what do I have to do to create one?
+    - I don't have an account, help me open one
+    - help me create an online account
+
+- intent: delete_account
+  examples: |
+    - can I close my account?
+    - I don't want my account, can you delete it?
+    - how do i close my online account?
+    - can i delete my account?
+    - ask an agent where to delete my user account
+    - I changed my mind, what can I do to remove myprofile?
+    - i changed my mind and i wanna cancel my account
+    - ask an agent where to cancel my online account
+    - can u ask an agent if i can close my online account?
+    - I don't want my profile, how can I cancel it?
+    - how can I remove my profile?
+    - could u ask an agent where to remove my account?
+    - I don't want my profile, what can I do to remove it?
+    - I changed my mind, help me remove my profile
+    - I changed my mind, I need help removing my online account
+    - i dont want my online acount and i wanna remove it
+    - I changed my mind, delete my account
+    - how to close my account
+    - can you ask an agent where I could remove my profile?
+    - i wanna cancel my online account, how can i do it?
+    - I changed my mind, what do I have to do to delete my account?
+    - I changed my mind, can you remove my profile?
+    - i want to close my user account, where could i do it?
+    - i dont want my profile, whyat do i have to do to cancel it?
+    - i changed my mind, what should i do to remove my profile?
+    - I don't want my user account and I want to cancel it
+    - ask an agent where i can close my user account
+    - can I close my user account?
+    - I changd my mind, delete my user account
+    - could u ask an agent how i can remove my account, please?
+    - can i cancel my account?
+    - I need help deleting my account
+    - I changed my mind and I want to close my online account
+    - I don't want my online account, what should I do to cancel it?
+    - I don't want my account, can I remove it?
+    - i changed my mind, i need help closing my fucking account, please
+    - can I remove my  user account?
+    - how can i cancel my online account?
+    - where to close my user account
+    - i changed my midn, close my user account
+    - I need help closing my profile
+    - I don't want my account, can you close it?
+    - I  want to remove my online account , where can I do it?
+    - ask an agent where to remove my account
+    - I don't want my profile, help me close it
+    - i changed my mind, what do i have to do to remove my online account?
+    - i wanna close my user account, where can i do it?
+    - I changfed my mind, what do I have to do to delete my user acccount?
+    - I chnaged my mind, I need help deleting my user account
+    - I need help deleting my profile
+    - i dont want my fucking online account, could u cancel it?
+    - i changed my mind, can u remove my user account?
+    - I changed my mind, what should I do to cancel my profile?
+    - i changed my mind, what do i have to do to delete my account?
+    - I odn't want my user account, how do I delete it?
+    - I want to delete my account, where can I do it?
+    - can I remove my onlinr account?
+    - I changed my mind, how can I cancel my user account?
+    - where to delete my profile
+    - I changed my mind, how do I remove my profile?
+    - where do I close my account?
+    - I don't want my user account, how can I delete it?
+    - I changed my  mind and I want to delete my profile
+    - I changed my mind, can I remove my online account?
+    - how do I cancel my profile?
+    - I want to remove myh account
+    - i dont want my online account, help me delete it
+    - I don't want my profile, how can I close it?
+    - please, could you ask an agent how to cancel my online account?
+    - i dont want my fucking account, how can i delete it?
+    - I don't want my online account, whqt can I do to close it?
+    - could you ask an agent if I could close my online account, please?
+    - ask an agent how i can remove my account, please
+    - how to cancel my profile
+    - where do i cancel my online account?
+    - ask an agent how to remove my user account
+    - I don't want my profile, close it
+    - I changed my mind, can I close my profile?
+    - I don't want my account, what should I do to remove it?
+    - please, ask an agent where i can close my account
+    - help me cancel my profile
+    - I don't want my profile , can I closeit?
+    - i wanna close my profile, how can i do it?
+    - I don't  want my user account, cancelit
+    - how can I remove my online account?
+    - could you ask an agent how to cancel my account, please?
+    - can u ask an agent how to cancel my profile?
+    - I want to delete my account
+    - help me remove my account
+    - I don't want my account, how can I close it?
+    - i dont want my user account, what should i do to delete it?
+    - I changed my mind, I need help closing my profile
+    - I don't want my profile and I want to cancel it
+    - I changed my mind, can I delete my account?
+    - where can I remove my user account?
+    - I don't want my profile, how do I close it?
+    - ask an agent where to close my online account
+    - can u ask an agent where to remove my profile?
+    - how to remove my online account
+    - I don't want my online account, can I close it?
+    - I changed my mind, help me cancel my profile
+    - where to close my account
+    - i dont want my user account, can u close it?
+    - I don'twant my profile , help me cancel it
+    - I don't want my online account, I need help removing it
+    - I want to close my user account
+    - how can I close my account?
+    - where do I close my profile?
+    - where do i cancel my profie?
+    - I don't want my online account, can you remove it?
+    - I changed my mind, what can I do to delete my profile?
+    - help me delete my user account
+    - I don't want my account
+    - I don't want my user account, can I delete it?
+    - i changed my mind, cancel my user account
+    - i changed my mind, how can i delete my profile?
+    - I don't want my online account, how do I cancel it?
+    - how do I rremove my profile?
+    - I changed my mind, what do I have to do to cancel my user account?
+    - where can I close my online account?
+
+- intent: delivery_options
+  examples: |
+    - ask an agent how i can see the options for ticket delivery
+    - how do I view the delivery options?
+    - can you tell me about the ticket delivery options?
+    - I want to view the delivery options
+    - can you show me the ticket delivery options?
+    - can u ask an agent where i can check the options for ticket delivery?
+    - I want to check the delivery options, what do I have to do?
+    - I want to see the delivery options, can you help me?
+    - can u ask an agent to show me the delivery options?
+    - please, ask an agent if i can check the options for ticket delivery
+    - can I view the delivery options?
+    - can you give me information avout the options for ticket delivery?
+    - i want to view the delivery options, what do i have to do?
+    - can you check the options for ticket delivery ?
+    - I want to check the options for ticket delivery, what can I do?
+    - what are the options for delivery?
+    - I want information about the options for delivery
+    - i want to check the delivery options
+    - where do I view the ticket delivery options?
+    - how can I see the options for delivery?
+    - I need information about the ticket delivery options
+    - could u check the fucking delivery options, please
+    - where can I see the options  for delivery?
+    - can u check the options for ticket delivery?
+    - check the delivery options
+    - I need help seeing the delivery options
+    - where can I see the options for ticket delivery?
+    - how can I view the options for ticket delivery?
+    - I want to check the delivery options, can you help me?
+    - how can I view the ticket delivery options?
+    - ask an agent how to see the delivery options
+    - where can I check the options for delivery?
+    - ask an agent where i can see the ticket  delivery options
+    - i want to view the ticket delivery options, what can i do?
+    - i wanna view the ticket delivery options, what can i do?
+    - I want to view the options for ticket delivery, can you help me?
+    - I want to check the options for delivery, what can I do?
+    - I want to check the options for delivery
+    - I want to see the ticket delivery options, what can I do?
+    - I want to view the delivery options, what do I have to do?
+    - could u find information about the fucking delivery options?
+    - how can I see the options for ticket delivery?
+    - ask an agent where I can see the fucking options for ticket delivery, please
+    - where do I view the delivery options?
+    - I want to see the ticket delivery options , can you help me?
+    - where do I see the ticket delivery options ?
+    - I want to see the options for delivery, what do I have to do?
+    - where can I check the options for ticket delivery?
+    - i want to check the options for ticket delivery
+    - how could i check the options for ticket delivery?
+    - i want to check the options for delivery
+    - help me check the options for delivery
+    - help me sew the delivery options
+    - how do I view the options for ticket delivery?
+    - can u ask an agent to give me information about the delivery options?
+    - can you ask an agent if I could view the ticket delivery options?
+    - how can I check the delivery options?
+    - how could I check the ticket delivery options?
+    - id like to view the delivery options, what should i do, please?
+    - can I view the ticket delivery options?
+    - ask an agent where i can check the options for ticket delivery
+    - I want to check the options for delivery, what do I have to do?
+    - how to view the options for delivry
+    - where to check the delivery options
+    - check the options for delivery
+    - where can I view the options ofr ticket delivery?
+    - I want to view the options for delivery, what should I do?
+    - what are the ticket delivery options?
+    - ask an agent where i can see the delivery options
+    - I want to see the delivery options, what can I do?
+    - could you ask an agent if I could view the ticket delivery options?
+    - ask an agent to check the options for ticket delivery
+    - I want to view the delivery options, what should I do?
+    - I want to view the options for ticket delivery, what do I have to do?
+    - show me the options for ticket delivery
+    - where do I check the delivery options?
+    - i want to check the options for delivery, what should i do?
+    - I need elp seeing the ticket delivcery options
+    - show me the delivery options
+    - where to check the fucking ticket delivery options
+    - how to view the delivery options
+    - show me the ticket delivery options
+    - I want to check the delievry options, what should I do?
+    - i wanna see the fucking ticket delivery options
+    - could you ask an agent to check the options for delivery?
+    - help me seethe ticket delivery options
+    - where can I see the deluvery options?
+    - how can I see the ticket delivery options?
+    - ask an agent to find information about the delivery options
+    - can I check the options for ticket delivery?
+    - can I check the ticket delivery options?
+    - where do I check the options for ticket delivery?
+    - can I see the options for delivery?
+    - I need information about the options for ticket delivery
+    - can I check the delivery options?
+    - can u ask an agent how to check the delivery options?
+    - i wanna view the fucking options for delivery, what can i do, please?
+    - can you find information about the delivery options?
+    - i wanna view the fucking options for delivery, what can i do?
+    - can u ask an agent where i can view the ticket delivery options?
+    - how can I view the delivery options?
+    - I want to check the ticket delivery options, what can I do?
+    - can you show me information about the options for delivery?
+    - where could I view the fucking ticket delivery options?
+    - where to see the delivery options
+    - i want to check the optrions for delivery, what do i have to do?
+    - can u ask an agent where to view the options for ticket delivery?
+    - how can I see the delivery options?
+    - ask an agent for information about the options for ticket delivery
+    - i need information about the options for delivery
+    - ask an agent where to see the delivery options
+    - i wanna see the optyions for delivery, what should i do?
+    - where to view the delivery options
+    - can i check the options for ticket delivery?
+    - ask an agent where I could see the delivery options, please
+    - where to view the ticket delivery options
+    - I want to check the options for ticket delivery
+    - how do I see the ticket delivery options?
+    - can you check the delivery options?
+    - how to check the ticket delivery options
+    - please, can you ask an agentq how I could check the ticket delivery options?
+    - can u ask an agent how to view the options for ticket delivery?
+    - can i check the ticket delivery options?
+    - I want to see the options for delivery, what shuold I do?
+    - i want to view the ticket delivery options, what should i do?
+    - can I see the ticket delivery options?
+    - ask an agent to show me information about the delivery options, please
+    - ask an agent for information about the delivery options
+    - where do i see the options for delivery?
+    - can I view the options for delivery?
+
+- intent: delivery_period
+  examples: |
+    - can u ask an agent how soon i can expect my tickets
+    - ask an agent when my tickets will arrive
+    - i want to know when my tickets are gonna arrive
+    - can you provide information about the delivery period for my ticket?
+    - how soon can I expect my tickets?
+    - I want to know how long the delivery takes
+    - can u awk an agent how soon i can expect my ticket to arrive
+    - information about the delivery period
+    - i need information about the delivery period for my tickets
+    - can you tell me how long it takes for a ticket to arrive?
+    - tell me when my tickets are going to arrive
+    - ask an agent to give me information about the delivery period for my tickets
+    - ask an agent for iunformation about the delivery period for my ticket
+    - could u ask an agent for information about the fucking delivery period?
+    - please, could u show me information about the fucking delivery period for my ticket?
+    - I want to know when my tickets are going to arrive
+    - I want information about the delivery period
+    - can you tell me about the delivery period?
+    - I want to see the delivery period for my ticket
+    - i wanna know how soon i can expect my tickets
+    - can you tell me about the delivery period for my ticket?
+    - how long does the delivery take?
+    - how soon can I expect my ticket to arrive?
+    - I want to know how long it takes for a ticket to arrive
+    - can you show me information about the delivery period?
+    - can you provide information about the delivery period for my tickets?
+    - i want to know how long it takes for a ticket to arrive
+    - show me the delivery period
+    - how fast can I expect my tickets to arrive?
+    - I want to see the delivery period
+    - I need information about the delivery period
+    - I want to know when my tickets will arrive
+    - can you give me information about the delivery period for my ticket?
+    - I want to know how fast I can expect my ticket to arrive
+    - can you tell me when my ticket is gonna arrive?
+    - please, could you ask an agent to provide information about the delivery period?
+    - could u ask an agent to provide information about the delivery period for my ticket,
+      please?
+    - tell me how long the delivery takes
+    - can u ask an agent whats the fucing delivery period for my ticket?
+    - how sono can i expect my tickets?
+    - I want to see the delivery period for my tickets
+    - I want to know how soon I can expect my ticket to arrive
+    - ask an agent what the delivery period for my ticket is
+    - I need information about the delivery period for my tickets
+    - ask an agent to provide information about the delivery period
+    - tell me when my ticket will arrive
+    - information about the delivery period formy tickets
+    - can you tell me how soon I can expect my ticket to arrive?
+    - please, coul u ask an agenr to show me information about the fucking delivery
+      period for my ticket?
+    - can you tell me how long the delivery takes?
+    - can you tell me how soon i can expect my tickets to arrive?
+    - tell me how long it takes for tickets to arrive
+    - can you tell me how soon I can expect my tickets to arrive?
+    - I would like to see the fucking delivery period for my ticket
+    - ask an agent hhow long the delivery takes
+    - how fast can I expect my ticket to arrive?
+    - tell me how fast I can expect my ticket to arrive
+    - can u ask an agent how soon i can expect my ticket
+    - could you tell me how fast i can expect my tickets to arrive, please?
+    - could u ask an agent to show me information about the delivery period, please?
+    - can u give me information about the delivery period for my tickets, please?
+    - can you tell me about the delivery period for my tickets?
+    - can you show me the delivery perod for my ticket?
+    - tell me how soon I can expect my tickets to arrive
+    - i wanna know how fast i can expect my tickets to arrive
+    - can you tell me when my tickets are gonna arrive?
+    - when is my ticket going to arrive?
+    - what's the delivery period?
+    - can you provide information about the delivery period?
+    - tell me how long it takes for a ticket to arrive
+    - can you show me the delivery period for my tickets?
+    - please, can you tell me about the delivery period for my ticket?
+    - can you tell me when my tickets will arrive?
+    - whats the delivery period for my ticket?
+    - can you tell me how soon I can expect my ticket?
+    - can u provide information about the delivery period for my tickets, please?
+    - how soon can i expect my ticket?
+    - please, could you ask an agent to give me information about the delivery period?
+    - can u ask an agent whats the delivery period for my tickets?
+    - can you show me the delivery period?
+    - can u ask an agent about the delivery period for my tickets?
+    - can u provide information about the delivery period?
+    - information about the delivery period for my ticket
+    - how long does it take for a ticket to arrive?
+    - I want to know how long it takes for tickets to arrive
+    - tell me how soon I can expect my ticket
+    - show me the delivery period for my ticket
+    - please, could you tell me when my ticket is gonna arrive?
+    - please, can you ask an agent about the delivery period for my tickets?
+    - I want information about thedelivery period for my tickets
+    - can you tell me how soon I can expect my tickets?
+    - I need information about the delivery period for my ticket
+    - how long does it take for tickets to arrive?
+    - I want to know when my ticket is going to arrive
+    - can u ask an agent to provide information about the delivery period for my tickets,
+      please?
+    - when will my tickets arrive?
+    - i wanna know when my ticket will arrive
+    - can you show me information about the delivery period for my ticket?
+    - tell me when my ticket is going to arrive
+    - what's the delivery period for my ticket?
+    - I want information about the delivery period for my ticket
+    - can you tell me how fast i can expect my tickets to arrive?
+    - can you tell me when my tickets are going to arrive?
+    - can you tell me when my tickets will arrive, please?
+    - I want to know how soon I can expect my tickets
+    - please, ask an agent to give me information about the delivery period
+    - ask an agent how long it takes for a ticket to arrive , polease
+    - what's the delivery period for my tickets?
+    - i want to know how fast i can expect my tickets to arrive
+    - tell me how fast I can expect my tickets to arrive
+    - can u ask an agent whats the delivery period for my ticket?
+    - i want to see the delivery period
+    - when are my tickets going to arrive?
+    - I want to know how fast I can expect my tickets to arrive
+    - how soon can I expect my tickets to arrive?
+    - can you tell me when my ticket is gtoiing to arrive?
+    - can you tell me how fast I can expect my tickets to arrive ?
+    - tell me how sono I can expect my tickets
+    - ask an agent when my tickets are gonna to arrive
+    - I want to knpw how soon I can expect my ticket
+    - can you tell me how fast I can expect my ticket to arrive?
+    - can u ask an agent for information about the fucking delivery period for my tickets?
+    - ask an agent to show me information about the delivery period
+    - I want to know how soon I can expect my tickets to arrive
+    - when will my tickket arrive ?
+    - i wanna see the fucking delivery period
+    - can you give me information about the delivery period for my tickets?
+    - tell me when my tickets will arrive
+    - how soon can i expect my ticket to arrive?
+    - can you show me information about the delivery period for my tickets?
+    - i want to know how soon i can expect my tickets to arrive
+    - i want information about the delivery period for my ticket
+    - can u ask an agent my ticket will arrive
+    - how soon can I expect my ticket?
+    - Iwant to know when my ticket will arrive
+    - can you tell me how long it takes for tickets to arrive?
+    - show me the delivery period for my tickets
+    - can you give me information about the delivery period?
+    - can you tell me when my ticket will arrive?
+    - tell me how soon I can expect my ticket to arrive
+    - i want to see the delivery period for my ticket
+
+- intent: get_invoice
+  examples: |
+    - i wanna know something about getting some bills
+    - i want to get an invoice, tell me how I can do it
+    - can u ask an agent for information about obtaining an innvoice?
+    - tell me if I can requset some invoices
+    - tell me where to request an invoice
+    - I want to get a bill, can you tell me how to do it?
+    - I want to ask for information about downloading an invoice
+    - can you ask an agent if i can see a bill?
+    - i would like to download a fucking bill, can you give me some information?
+    - I want to get an invoice, can you tell me where I can do it?
+    - can you see an invoice ?
+    - where do I get a bill?
+    - I want information about getting an invoice
+    - I want to obtain some bills, can you give me some information?
+    - I want to know if I can request a invoice
+    - how do I obtain some bills?
+    - I want to get information about downloading a bill
+    - download some bills
+    - can you send me an invoice?
+    - I wanna obtain some invoices, can you tell me how to do it?
+    - do you mind asking an agent how I could request some invoices?
+    - I want to obtain  some bills
+    - I want to see some invoices , tell me how I can do it
+    - ask an agent how to get some bills
+    - tell me how to obtain some invoices
+    - I want to request a bill, can  you tell me where to do it?
+    - teol me about getting some bills
+    - I want to request some bills, can you tell me how I can do it?
+    - ask an agent how I can request somebills
+    - i want to see a bill
+    - i want to download a bill, can you tell me where to do it?
+    - I want to ger a bill
+    - i want to know where to download a bill
+    - I wanna know where to obtain a bill
+    - I want to download a bill, can you tell me how to do it?
+    - I need help getting an invoice
+    - can you tell me how I can download some invoices?
+    - i want to get a bill , tell me how to do it
+    - I want to know how to get a bill
+    - i wanna see a bill, can you tell me how I can do it?
+    - how can  I download some bills?
+    - is it possible to see an invoice?
+    - I want information about obtaining an invoice
+    - i want to download an invoice, can you give me some information?
+    - id like to download a bill, can you tell me how I can do it, please?
+    - I want to download some invoices, can you give me some information?
+    - please, i wanna know if i can obtain somebills
+    - I want to know if I can obtain a bill
+    - can u ask an agent where to get an invoice?
+    - what information can you tell me about requesting a bill?
+    - tell me how I can see some invoices
+    - where to download a bil
+    - I want to get an invoice, tell me how I can do it
+    - I wanna ask for information about seeing a bill
+    - help me download some bills
+    - what information can u tell me about seeing some bills?
+    - i want to know how I can request some bills
+    - I want to know something about downloading an invoice
+    - I want to see an invoice, can you show me some information?
+    - I want to see an invoice, can you tell me how to do it?
+    - what can you tell me about requesting some bills?
+    - can u ask an agent where I can download an invoice?
+    - tell me how toi see a bill
+    - I want to request information about downloading some invoices
+    - I want to know something about getting some bills
+    - I want information about requesting an invoice
+    - how do  I get some invoices ?
+    - i want to know where go obtain an invoice
+    - i want to know how to obtain some invoices
+    - can you send me some invoices?
+    - I want to request a bill, can you give me some information?
+    - could u ask an agent how to request an invoice, please?
+    - i wanna request some fucking bill , can you give me some information?, please
+    - can you ask an agent how I can get a ibll?
+    - I want to ask for information about seeing an invoice
+    - I want to see a bill, can you give me some information?
+    - I want to request information about obtaining an invoice
+    - help me donwload a bil
+    - I want to see a bill, tell me where I can do it
+    - what information can you tell me about getting a bill?
+    - i wanna get a fucking invoice, could you tell me how to do it?
+    - download an invoice
+    - is it possible to download some bills?
+    - please, Id like to ask for information about requesting an invoice
+    - tell me if I can download some bills
+    - i wanna know if I can obtain some invoices
+    - I want to request some bills, can you tell me how to do it?
+    - can you tell me if i can obtain some bills?
+    - I want to know where I can see an invoice
+    - I want to ask for infofmation about getting an invoice
+    - I want to request information about getting a bill
+    - how do I download an invoice?
+    - I want to know where to request an invoice
+    - i wanna know if i can request some invoices
+    - i want to download an invoice, tell me how I can do it
+    - can you tell me if i can see some bills?
+    - I need information about downloading sone bills
+    - I want to download an invoice
+    - i want to know something about getting some invoices
+    - can u ask an agent how I can request an invoice?
+    - I want to get some bills, can you show me some information?
+    - I want to see some bills
+    - I want to request information about downloading somefucking bills
+    - i'd like to see an invoice, can you tell me where I can do it, please?
+    - where can I see a bill?
+    - information about seeing some bills
+    - I want to obtain some bills, can you show me some information?
+    - can you ask an agent how I could get some invoices?
+    - i need help obtaining some bills
+    - how can I download a bill?
+    - I need help seeing some invoices
+    - I want  to obtain some invoices
+    - I want to know how to see some bills
+    - where to request a bill
+    - I want to download some bills, tell me how to do it
+    - tell me how to request an invoice
+    - i want to get some invoices, can you give me some information?
+    - i want to download an invoice, can you tell me where I can do it?
+    - i wanna get an invoice, tell me where to do it
+    - I want to ask for information about seeing some bills
+    - please, could u request some invoices?
+    - tell me if I can obtain some invoices
+    - is it possible to download some invoices?
+    - I want to know how to get some bills
+    - could youobtain a fucking bill, please?
+    - how can I get an invoice?
+    - what can you tell me about obtaining some bills?
+    - send me a bill
+    - can you tell me where to request an invoice?
+    - i want to know how I can obtain some bills
+    - can you tell me how to download some bills?
+    - can u ask an agent for information about obtaining an invoice?
+    - i wanna see an invoice, tell me where I can do it
+    - could u ask an agent where I can obtain a fucking invoice, please?
+    - I wanna know something about seeing a bill
+    - can you ask an agent how I could obtain some bills?
+    - can you tell me how to download some invoices?
+    - information about requesting a bill
+    - how can I obtain a bill?
+    - where can I download a bill?
+    - i want to obtain some bills, can you give me some information?
+    - can you ask an agent how to get some invoices?
+    - I need information about requesting a bill
+    - ask an agent how I can request a bill
+    - I need help getting some bills
+    - please, i would like to get information about downloading a fucking bill
+    - I want to know where I can obtain an invoice
+    - see an invoice
+    - I want to see some bills, tell me how I can do it
+    - please, tell me if i could get a bill
+    - I wanna request information about seeing some bills
+    - I want to download an invoice, tell me how to do it
+    - I want to get information about downloading an invoice
+    - tell me how I can obtain a bill
+    - I want information about downloading an invoice
+    - where do I download a bill?
+    - can you tell me if I can see an invoice?
+    - where do I obtain a bill?
+    - I want to see a bill, tell me how I can do it
+    - I want to request information about downloading an invoice
+    - I wanna see an invoice, tell me how to do it
+    - can you tell me how I can get some invoices?
+    - I want to get some invoices, tell me how to do it
+
+- intent: get_refund
+  examples: |
+    - the game was postponed, help me obtain a reimbursement
+    - the game was postponed, what should I do to obtain a reimbursement?
+    - the concert was postponed, what should I do to request a reimbursement?
+    - ask an agent if i can receive a refund
+    - the event was postponed, what do i have to do to request a reimbursement?
+    - the game was cancelled, how do i get a refund?
+    - the concert was cancelled, what should I do to get a refund?
+    - the game was cancelled, what should i do?
+    - the game was postponed and i wanna obtain a reimbursement
+    - the concert was postponed, what do I have to do to obtain a reimbursement?
+    - the concert was cancelled, help me obtain a reimbursement
+    - the concert was postponed, what should I do to request a refund?
+    - the show was cancelled, what can I do to obtain a reimbursement?
+    - the show was cancelled, help me egt a refund
+    - the event was postponed , what do i have to do to obtain a reimbursement ?
+    - the show was cancelled, how do I get a reimbursement?
+    - i need help obtaining a refund
+    - the show was postponed and I want to get a refund
+    - I want a refund, helpme request one
+    - the concert was cancelled, can I obtain a reimbursement?
+    - could u ask an agent how i can request a reimbursement?
+    - the concert as cancelled, can you help me?
+    - the event was cancelled, what can i do to request a reimbursement?
+    - the show was poostponed, what can I do to obtain a refund?
+    - the event was postponed, help me obtain a reimbursement
+    - the game was postponed and I want to obtain a reimbursement
+    - the show was postponed, elp me request a refund
+    - the event was postponed, could i request a fucking refund?
+    - the event was postponed, what do I have to do?
+    - id like a fucking refund, how could i obtain one?
+    - the event was cancelled and i wanna request a refund
+    - can I receive a reimbursement?
+    - ask an agent how i can request a refund
+    - ask an agent how i can request a reimbursement, please
+    - the event was postponed, how can I obtain a reimbursement?
+    - the show was cancelled and I want to request a refund
+    - I would like to obtain a refund, could you help me?
+    - i wanna get a reimbursement, can u help me?
+    - the show was cancelled, what do I have to do to request a reimbursement?
+    - the concert was postponed, what should I do to obtain a reimbursement?
+    - the show was cancelled, how can I request a refund?
+    - the concert was postponed, how can I request a reimbursement?
+    - I want a reimbursement, what can I do to request one?
+    - the concert was postponed, what should i do?
+    - the fucking  show was postponed, can I obtain a refund?
+    - help me receive a refund
+    - the game was postponed, help me get a reimbursement
+    - can u ask an agent where i can request a reimbursement?
+    - can u ask an agent when I will obtain a refund?
+    - I need an refund, what do I have to do toobtain one?
+    - I need a reund, obtain one
+    - I'd like a refund, how do I request one?
+    - the game was cancelled, what do I have to do to request a reimbursement  ?
+    - the game was cancelled, how can i get a refund?
+    - the concert waspostponed and i wanna get a reimbursement
+    - can u ask an agent if i can get a refund?
+    - the concert was postponed, what should i do to obtain a refund?
+    - I ened a refund, get one
+    - the event was postponed, request a refund
+    - I need a refund, help me obtain one
+    - the concert was cancelled, how do I obtain a reimbursement?
+    - the game was postponed, can I request a reimbursement?
+    - the event was postponed, what should I do to obtain a reimbursement?
+    - I want to get a reimbursement, what do I have to do?
+    - the show was postponed, what should I do to obtain a reimbursement?
+    - could u ask an agent where i could obtain a fucking refund, please?
+    - I want to get a refund, what should I do?
+    - can you ask an agent where I can request a refund, please?
+    - the show was postponed, what can I do to obtain a reimbursement?
+    - I want to obtain a refund
+    - the event was postponed, how do I obtain a refund?
+    - the game was cancellerd, what can I do?
+    - the show was postponed, could I request a fuckingreimbursement?
+    - the concert was cancelled, what should I do to request a reimbursement?
+    - the concert was cancelled nad I want ot get a reimbursement
+    - the event was postponed, what can I do to request an reimbursement?
+    - the event was postponed, what should i do to request a refund?
+    - the game was cancelled, what can i do to get a refund?
+    - the show was postponed, request a reimbursement
+    - can u ask an agent how i can request a reimbursement?
+    - the show was cancelled, how do i obtain a refund?
+    - the show was cancelled and i wanna obtain a reimbursement
+    - the event was cancelled and i want to get a refund
+    - the event was cancelled, how can i get a refund?
+    - the concret was postponed, can I request a refund?
+    - can u ask an agent where i can obtain a reimbursement?
+    - the show was postponed, what do I have to do to obtain a reimbursement?
+    - the concert was cancelled, how do i requesr an refund?
+    - can u ask an agent where i can get a refund?
+    - the show was postponed, what should I do to get a reimbursement?
+    - the game was cancelled, what should I do to request a reimbursement?
+    - the concert was postponed, can i obtain a reimubrsement, please?
+    - hgow do I get a  reimbursement?
+    - the show was cancelled and I want to get an reimbursement
+    - please, can you ask an agent where I can receive a refund?
+    - the game was postponed, what should I do to get a reimbursement?
+    - the game was opstponed, what can i do to obtain a refund?
+    - could you ask an agent when I will get a reimbursement, please?
+    - the event was cancelled and i wanna get a refund
+    - the game was postponed, how could I obtain a refund?
+    - the event was postponed, what should I do to request a reimbursement?
+    - the game was postponed, how can I request a reimbursement?
+    - the event was postponed and i want to request a reimbursement
+    - the show was cancelled, what do I have to do to get a refund?
+    - the event was cancelled, can i request a refund?
+    - the game was cancelled and I'd like to obtain a fucking reimbursement, please
+    - the game was postponed, could I obtain a fucking refund, pleased?
+    - i wanna request a reimbursement, can u help me?
+    - can u ask an agent if i can otain a reimbursement?
+    - the fucking game was postponed and id like to request a reimbursement, please
+    - the concert was postponed, what should I do to obtain a refund?
+    - please, ask an agent where I could reecive a refund
+    - the game was postponed and I want to request a reimbursement
+    - the show was postponed, help me get a reimbursement
+    - the game was cancelled, obtain a refund
+    - I need a reimbursement, how can I obtain one?
+    - ask an agent where to get a refund
+    - the game was postponed, can u help me?
+    - I need a refund, how can I request one?
+    - the show was postponed, what can I do?
+    - I need a refund, how do I request one?
+    - the event was cancelled and i want to request a refund
+    - the show was postponed, what do i have to do to request a reimbursement?
+    - the concert was postponed, what should i do to obtain a reimbursement?
+    - the concert was cancleled, what can I do ?
+    - the game was cancelled, can I get a reimbursement?
+    - where to request a reimbursement
+    - i want to obtain a reimbursement, could u help me?
+    - the show was postponed, how can I request a refund?
+    - the show was cancelled, how do i request a reimbursement?
+    - the concert was cancelled, how can i request a reimbursement?
+    - where to get a reimbursement
+    - how can I obtain a reimbursement?
+    - ask an agent to request a reimbursement
+    - the show was cancelled, canI get a refund?
+    - the event was postponed, what should i do to get a reimbursement?
+    - the event was cancelled, what do i have to do to get a refund?
+    - the concert was postponed, how do I obtain a reimbursement?
+    - I need a refund, can you help me?
+    - I needhelp requesting a refund
+    - where do i request a reimbursement?
+    - the show was postponed, could i obtain a reimbursement, please?
+    - the game was cancelled, can I request a reimbursement?
+    - the show was postponed, what do I have to do to get a reimbursement?
+    - the concert was postponed, what can I do to obtain a refund?
+    - the event was postponed and I want to request a reimbursement
+    - the event was postponed, how can i get a reimbursement?
+    - I want a reimbursement, what do I have to do?
+    - I want a reimbursement, request one
+    - the event was postponed, how can I obtain an refund?
+    - please, could u ask an agnt where to receive an reimbursement?
+    - the concert was postponed, can you help me?
+    - I need a reimbursement, how do I obtain one?
+    - the concert was postponed, what should I do?
+    - ask an agent if i could obtain a refund, please
+    - i want to obtain a reimbursement, can u help me?
+    - I want a refund, help me get one
+    - the concert was postponed, what can I do?
+    - the show was cancelled, how can I get a reimbursement?
+    - the show was cancelled, what should I do to obtain a refund?
+    - the event was postponed, what should i do to obtain a reimbursement?
+    - the fucking show was postponed and I'd like to obtain a reimbursement, please
+    - the concert was cancelled, what do I have to do to get a reimbursement?
+    - the show was postponed, help me obtain a refund
+    - I want to get a refund, can you help me?
+    - I need a refund, how can I get one?
+    - the show was cancelled, what can i do to request a reimbursement?
+    - the game was cancelled, can I obtain a refund?
+    - I would like a refund, can I obtain one?
+    - the cincert was postopned, can I get a refund, please?
+    - could u ask an agent where i could get a reimbursement, please?
+    - i wannaq obtai a reimbursement, can u help me?
+    - the game was postponed and I want to get a refund
+    - the concert was cancelled, how do I obtain a refund?
+    - what can I request a refund for?
+    - the game was cancelled, obtain a reimbursement
+    - how do I obtain a reimbursement?
+    - the show was cancelled, what do I have to do to get a reimbursement?
+    - the game was cancelled, could i obtain a reimbursement?
+    - the game was postponed, how do I get a refund?
+    - the fucking event was cancelled, can u help me?
+    - the event was postponed and i wanna get a reimbursement
+    - the show was postponed, what do i have to do to obtain a reimbursement?
+    - the game was cancelled, what can I do to get a reimbursement?
+    - the show was cancelled, help me obtain a refund
+    - the concert was postponed and I want to request a refund
+    - the event was cancelled, what can I do to request a refund?
+    - ask an agent if i can receive a reimbursement
+    - the game was cancelled, what should I do to obtain a reimbursement?
+    - the show was postponed and I want to obtain a reimbursement
+    - the concerft was cancelled, what do I have to do to request a refund?
+    - the game was postponed, what do I have to do to request a refund?
+    - the event was cancelled, can i request a reimbursement?
+    - the event was cancelled and i wanna get a reimbursement
+    - I need help receiving a refund
+    - the game was postpone, how can I obtain a refund?
+    - the concert was postponed and i wanna request a reimbursement
+    - the show was cancelled, what should i do?
+    - the event was cancelled and i wanna obtain a reimbusement
+    - can I obtain a refund?
+    - the show was cancelled, could i get a erimbursement , please?
+    - how can I get a reimbursement?
+    - i want a reimbursement, what do i have to do to request one?
+    - the event was cancelled and I'd like to request a refund
+    - the show was postponed, how could I obtain a fucking refund?
+    - can u ask an agent how i can obtain a refund?
+    - can I get a refund?
+    - I want to receive a refund
+    - the concert was caancelled, request a refund
+    - d like to obtain a refund, can u help me?
+    - can you ask an agent how I can request a fucking reimbursement, please?
+    - the game was cncelled, how do I get a reimbursement?
+    - the game was postponed, how do i obtain a refund?
+    - the event was cancelled, what should I do to request a reimbursement?
+
+- intent: newsletter_subscription
+  examples: |
+    - can you ask an agent if there's a newsletter i can receive?
+    - how can I receive the newsletter?
+    - can you tell me how I can receive the fucking newsletter?
+    - I want to subscribe to the newsletter
+    - can you tell me how to subscribe to the newsletter?
+    - I wanna receive the newsletter, can you give me some  information?
+    - can u ask an agent if there's a newsletter i can receive?
+    - do you have a newsletter to stay informed?
+    - ask an agent if theres a newsletter I can subscribe to
+    - I want to know if you have a newsletter to keep me up-to-date
+    - id like to subscribe to the newsletter, can you tell me how I can do it?
+    - can u ask an agent if I can receive the newsletter?
+    - I want to subscribe to the newsletter, can you show me some information?
+    - can you tell me if you have a newsletter to stay informed?
+    - receive  the newsletter
+    - please, could you tell me if theres a newsletter I can subscribe to?
+    - can you tell me if there's a newsletter I can subscribe to ?
+    - help me subscribe to the newsletter
+    - xan you tell me if there's a newsletter to keep me up-to-date?
+    - I want to know if you have a newsletter to stay up-to-date
+    - can you tell me if you have a newsletter I can subscribe to?
+    - i want to know if there is a newsletter to stay up-to-date
+    - tell me if there's a newsletter to stay informed
+    - I want to subscribe to the newsletter, can you tell me how I can do it?
+    - I wanna receive the newsletter, can you tell me how to do it?
+    - I want to receive the newsletter
+    - I want to know if you have a newsletter to stay informed
+    - can you tell me how I can receive the newsletter?
+    - i want to know how I can receive the newsletter
+    - I want to receive the newsletter, can you tell me how I can do it?
+    - where do I subscribe to the newsletter?
+    - how to subscribe to the newsletter
+    - please, can u ask an agent if there is an newsletter i could subscribe to ?
+    - where to subscribe to the newsletter
+    - i wanna know if i can subscribe to the newsletter
+    - i'd like to receive the newsletter, can you tell me how I can do it, please?
+    - ask an agent if there's a newsletter I can subscribe to
+    - I want to receive the newsletter, tell me how I can do it
+    - I want to know if theres a newsletter toi stay up-to-date
+    - ask an agent if theres a newsletter I can receive
+    - I wanna receive the newsletter, can you show me some information?
+    - I want to know if you have a newsletter to keep me informed
+    - I want to reeceive the newsletter, tell me where I can do it
+    - could you tell me if there is a newsletter I could subscribe to, please?
+    - can u ask an agent if you have a newsletter to keep me up-to-date?
+    - I want information about subscribing to the newsletter
+    - can you tell me if you have a newsletter to keep me informed?
+    - where do I receive the newsletter?
+    - Iwant to receive the newsletter, can you give me some information?
+    - can you tell me if there's a newsletter to stay up-to-date?
+    - where to receive the newsletter
+    - I need help refeiving the newsletter
+    - can u ask an agent if they have a newsletter I can subscribe to?
+    - I wanna know where to receive the newsletter
+    - I want to know if theres a newsletter i can subscribe tgo
+    - I need help subscribing to the newsletter
+    - tell me if you have a newsletter I can receive
+    - i want to know if there is a newsletter i can subscribe to
+    - can you tell me if you have a newsletter to keep me up-to-date?
+    - i want to receive the newsletter, tell me where to do it
+    - can I receive the newsletter?
+    - can you ask an agent if they have a newsletter i can subscribe to?
+    - I wanna know if you have a newsletter to stay up-to-date
+    - I want to know how to receive the newsletter
+    - i want to know if there's a newsletter i can receive
+    - I want to know if there's a newsletter to keep me up-to-date
+    - tell me how I can subscribe to the newsletter
+    - can u ask an agent if there's a newsletter I could receive?
+    - I want to know where to receive the newsletter
+    - i want to know how I can subscribe to the newsletter
+    - I want information about receiving the newsletter
+    - ask an agent if there is a fucking newsletter I could receive, please
+    - can you ask an agent if theres a newsletter i can receive?
+    - i wanna receive the fucking newsletter, can you tell me where I can do it, please?
+    - information about rceiving the newsletter
+    - I want to know if there's a newsletter to stay informed
+    - can you tell me if there's a newsletter I can receive?
+    - ask an agent if theres a newsletter i can subscribe to
+    - can you ask an agent if theres a newsletter to keep me up-to-date?
+    - tell mne where to rfeceive the newsletter
+    - please, i wanna get information about subscribing to the fucking newsletter
+    - tell me if you have a newsletter to keep me up-to-date
+    - can you ask an agent if there's a newsletterto stay up-to-date, please?
+    - is there a newsletter to stay up-to-date?
+    - I want to receive the newsletter, tell me where to do it
+    - can you tell me if you have a newsletter to stay up-to-date?
+    - I wanna know how I can subscribe to the newsletter
+    - do you have a newsletter to keep me up-to-date?
+    - I want to receive the newsletter, can you tell me how to do it?
+    - can you tell me if there's a newsletter to stay informed?
+    - where can I receive the newsletter?
+    - can u ask an agent if i can receive the newsletter?
+    - tell me if theres a newsletter I can receive
+    - do you have a newsletter I can receive?
+    - I want to subscribe to the newsletter, tell me how I can do it
+    - tell me about subscribing to the newsletter
+    - how do I receive the newsletter?
+    - I'd like to receive the newsletter, could you tell me how to do it?
+    - what information do you have about receiving the newsletter?
+    - is it possible to receive the newsletter?
+    - i wanna know if there is a newsletter to stay up-to-date
+    - I want to receive the newsletter, can you tell me where to do it?
+    - tell me if there's a newsletter i can receive
+    - I want to subscribe to the newsletter, can you tell me how to do it?
+    - can you tell me if I can receive the newsletter?
+    - I want to request information about subscribing to the newsletter
+    - is there a newsletter to stay informed?
+    - can u ask an agent if theres a newsletter to keep me up-to-date?
+    - how to receive the newsletter
+    - id like to subscribe to the newsletter, can you tell me how to do it?
+    - can you tell me if I can subscribe to the newsletter?
+    - I wanna know if there is a newsletter to keep me informed
+    - i would like to get information about subscribing to the fucking newsletter
+    - can you tell me where to subscribe to the newsletter?
+    - is there a newsletter I can subscribe to?
+    - could you ask an agent to receive the fucking newsletter, please?
+    - tell me if there's a newsletter to stay up-to-date
+    - subscribe to the newsletter
+    - tell me where I can receive the newsletter
+    - i want to know about receiving the newsletter
+    - please, can you ask an agent if there is a fucking newsletter i can subscribe
+      to?
+    - I want to know about receiving the newsletter
+    - I want to ask for information about receiving the newsletter
+    - tell me if there is a newsletter i can receive
+    - could u ask an agent if they have a newsletter i could receive, please?
+    - tell me where to subscribe to the newsletter
+    - i want to know if there's a newsletter to stay up-to-date
+    - what can yopu tell me about subscribing to the newsletter?
+    - please, can you ask an agent if i can recevie the fucking newsletter?
+    - tell me if I can receive the newsletter
+    - information about subscribing to the newsletter
+    - tell me about receiving the newsletter
+    - ask an agent if theres a newsletter to stay informed
+    - I want to know if there's a newsletter  I can subscribe to
+    - i wanna know if i can receive the newsletter
+    - could you ask an agent how I could subscribe to the fucking newsletter, please?
+    - I need information about subscribing to the newsletter
+    - I want to receive the newsletter, can you show me some information?
+    - I wantto know avout subscribing to the newsletter
+    - can you tell me how I can subscribe to the newsletter?
+    - please, could you tell me if I could subscribe to the newsletter?
+    - i wanna know if you have a newsletter I can receive
+    - I want to get informmation about receiving the newsletter
+    - I want to receive the newsletter, tell me how to do it
+
+- intent: payment_issue
+  examples: |
+    - how can i solve problems paying?
+    - I got an error message when I attempted to pay, but my card was charged anyway,
+      how can I notif it?
+    - i get an error when i try to make a payment for my order, what can i do?
+    - I got an error when I tried to pay, but I was charged anyway, can you notify it?
+    - I would like to inform of a problem making a payment, could you help me?
+    - i got an error when i tried to pay, but my card was charged anyway, i need help
+      notifying it
+    - I get an error message when I attempt to make a payment with card, can you help
+      me?
+    - I got an error when I tried to pay, but I was charged anyway, can I report it?
+    - I have a problem paying for my order, can I inform of it?
+    - I have an issue when trying to pay with card, how can I notify it?
+    - how to inform of a payment problem
+    - I got an error message when I attempted to pay, but my card was charged anyway,
+      help me report it
+    - i have an issue paying, help me notify it
+    - how do i notify a payment problem?
+    - i wanna solve a payment issue
+    - I get an error when I attempt to pay for my order
+    - I have a problem making a payment with card, how do I report it?
+    - I got an error when I attempted to pay, but I was charged anyway, I need help
+      informing of it
+    - I got an error message when I attempted to make a payment, but my card was charged
+      anyway, what do I have to do to notify it?
+    - I need help informing of a payment issue
+    - I have an issue when trying to pay and I want to report it
+    - can u ask an agent where to notify a problem paying?
+    - please, can u ask an agent how to solve payment issues?
+    - I got an error when I attempted to pay, but I was charged anyway, I need help
+      notifying it
+    - I have an issue when trying to make a payment with card and I'd like to notify
+      it, please
+    - I'd like to notify a problem with my payment, what can I do?
+    - I got an error when I attempted to pay, but my card was charged anyway, what can
+      I do?
+    - I have a problem when trying to pay, how do I report it?
+    - I have a problem paying for my online order, how do I notify it?
+    - how to notify problems paying
+    - can u ask an agent to inform of issues paying?
+    - I got an error when I tried to make a payment, but I was charged anyway, help
+      me notify it
+    - please, ask an agent how I can solve rpoblems with my payment
+    - could you ask an agent if I can inform of an issue with my payment, please?
+    - i get an error message when i try to pay for my online order, can u help me?
+    - i have an issue paying for my order, help me notify it
+    - I have a problem when trying to pay, how can I notify it?
+    - i want to solve an issue making a payment, what can i do?
+    - can u ask an agent where i can notify problems paying?
+    - I got an error message when I attempted to pay, but my card was charged anyway,
+      can I report it?
+    - ask an agent how i can notify a payment issue
+    - can u ask an agent how i can inform of payment issues?
+    - I have a problem when trying to make a payment, can you help me?
+    - how can I inform of a problen paying ?
+    - where do I inform of issues with my pazyment?
+    - I got an error message when I tried to pay, but I was charged anyway anmd I want
+      to report it
+    - ask an agent where I can report issues with my payment, please
+    - I have an issue when trying to make a payment, what should I do to inform of it?
+    - i have a problem paying with card, what should i do to notify it?
+    - can I notify payment issues?
+    - help me notify an issue paying
+    - I get an error when I try to pay with card, what should I do?
+    - can I notify payment problems?
+    - please, could u ask an agent where to notify a fucking issue making a payment?
+    - can i report a problem paying?
+    - I got an error message when I tried to make a payment, but I was charged anyway,
+      inform of it
+    - can I inform of issues with my payment?
+    - I got an error when I attempted to make a payment, but my card was charged anyway,
+      can you notify it?
+    - I got an error message when I attempted to make a payment, but I was charged anyway,
+      what do I have to do to notify it?
+    - I got an error message when I tried to pay, but my card was charged anyway, help
+      me inform of it
+    - i have an issue when trying to make a payment and i wanna inform of it
+    - i want to inform of a problem paying
+    - i got an error when i attempted to oay, but my card was charged anyway, what do
+      i have to do to inform of it?
+    - how to notify issues paying
+    - where to inform ofissues paying
+    - i get an error message when i attempt to make a payment for my online order, what
+      do i have to do?
+    - I get an error message when I try to pay for my online order, what do I have to
+      do?
+    - where to notify a payment issue
+    - I got an error when I tried to make a payment, but I was charged anyway and I
+      would like to report it, please
+    - I get an error when I attempt to make a payment, what can I do?
+    - I got an error message when I attempted to make a payment, but I was charged anyway,
+      I need help reporting it
+    - help me notify payment problems
+    - how to solve problems paying
+    - can you ask an agent where I can notify an fucking problem making a payment, please?
+    - ask an agent where to report an issue paying
+    - how can I report issues with my payment?
+    - i want to inform of an issue paying, wha can i do ?
+    - i want to inform of a problem paying, what should i do?
+    - an error message pops when i attempt to make a payment for my order, can u help
+      me?
+    - how can Inotify issues with my payment ?
+    - i need help solving payment problems
+    - could u ask an agent where i can report issues making a payment?
+    - i have an issue when trying to pay, can u help me?
+    - I got an error message when I attempted to pay, but I was charged anyway, what
+      can I do to notify it?
+    - I have a problem when trying to pay for my order, what should I do to inform of
+      it?
+    - an error pops when I try to make a payment with card, can you help me?
+    - how can I solve an issue making a payment?
+    - I got an error message when I tried to pay, but I was charged anyway, how can
+      I notify it?
+    - I have a problem when trying to pay and I want to notify it
+    - I have an issue when trying to pay
+    - I have a problem wehen trying to pay for my order, what can I do to notify it?
+    - I need help informing of payment problems
+    - I have a problem when trying to pay for my order, help me inform of it
+    - i want to solve an issue making a payment, could u help me?
+    - I have a problem making an payment with card, what do I have to do to report it?
+    - i need help informing of an issue making a payment
+    - I got an error message when I tried to make a payment, but I was charged anyway,
+      what should I do to inform of it?
+    - I want to report problems paying
+    - an error message popswhen I try to make a payment for my order, what should I
+      do?
+    - I have an issue making a payment, can you inform of it?
+    - where do I report an issue with my payment?
+    - I have a problem when trying to make a payment, can I report it?
+    - i got an error when i tried to pay, but i was charged anyway , i need help reporting
+      it
+    - I have a problem making a payment, how can I notify it?
+    - could you ask an agent how I could solve a problem paying?
+    - I'd like to solve an issue naking a payment, can you help me?
+    - how do I solve a problem paying?
+    - i have a problem paying with card, how can i notify it?
+    - i have a problem when trying to pay, can u inform of it?
+    - help me inform of a problem with my payment
+    - the payment failed, can you help me?
+    - I have a problem when  trying to make a payment
+    - I have an issue when trying to pay for my online order, what can I do?
+    - I have an issue when trying to pay with card, I need help reporting it
+    - an error message pops when I try to make a payment, what do I have to do?
+    - i have an issue when trying to make a payment with card, what should i do?
+    - I got an error when I tried to make a payment, but my card was charged anyway,
+      can you help me?
+    - I have a problem paying for my online order, what can I do to infomr of it?
+    - I want to inform of an issue paying, what should I do?
+    - i get an error message when i attempt to pay for my order, what should i do?
+    - can you ask an agent where I could inform of a fucking payment issue?
+    - how do I report problems with my payment?
+    - I want to solve a problem making a payment, what can I do?
+    - I have an issue paying for my order, how do I report it?
+    - I want to inform of a fucking issue making a payment
+    - I have an issue when trying to pay for my order, what do I have to do to report
+      it?
+    - I got an error message when I attempted to pay, but my card was charged anyway,
+      can you inform of it?
+    - an error pops when i try to make a paymeng for my online order
+    - i got an error when i tried to make a payment, but i was charged anyway and i
+      wanna report it
+    - I have an issue when trying to pay for my order, what do I have to do to notify
+      it?
+    - please, can u ask an agent if i can inform of fucking problems with my payment?
+    - i got an error when i attempted to pay, but i was charged anyway, how can i report
+      it?
+    - ask an agent where i can report problems making an payment
+    - I got an error message when I attempted to pay, but my card was charged anyway,
+      what do I have to do to report it?
+    - I have an issue paying, what do I have to do?
+    - I got an error when I tried to make a payment , but my card was charged anyway,
+      how do I notify it?
+    - I got an error when I attempted to apy , but I was charged anyway, I need help
+      reporting it
+    - I get an error when I attempt to pay for my online order, what do I have to do?
+    - I got a error when I tried to make a payment, but I was charged anyway, what should
+      I do?
+    - please , could u ask an agent where to report a payment problem?
+    - I have an issue making a payment, what can I do to notify it?
+    - I want to report a problem paying
+    - i get an error when i attempt to make a payment for my online order, can u help
+      me?
+    - I got an error message when I attempted to make a payment, but my card was charged
+      anyway, can I inform of it?
+    - I want to notify payment problems
+    - I have a problem when trying to make a poayment with card, help me report it
+    - i want to solve a paymentissue , what do i have to do?
+    - I'd like to inform of a problem paying, can you help me?
+    - i have a problem when trying to make a payment with card, what can i do?
+    - I got a error when I attempted to pay, but I was charged anyway, how can I inform
+      of it?
+    - I got an error when I attempted to make a payment, but I was charged anyway, what
+      should I do to inform of it?
+    - I get an error message when I try to make a payment for my online order, what
+      should I do?
+    - I get an error when I attempt to pay for my order, what do I have to do?
+    - where to inform of issues with my payment
+    - i got an error when i attempted to make a payment, but my card was charged anyway,
+      help me notify it
+    - I got an error message when I attempted to make a payment, but my card was charged
+      anyway, how do I inform of it?
+    - where can I notify a problem with my payment?
+    - an error pops when I try to make a payment for my order, what can I do?
+    - i need help reporting problems with my payment
+    - how to notify issues making a payment
+    - I get an error when I attempt to make a payment for m order, what should I do?
+    - I have an issue when trying to pay for my order, inform of it
+    - i have a problem paying for my online order, can i report it?
+    - I want to notify a payment problem, can you help me?
+    - I got an  error message when I attempted to make a payment, but I was charged
+      anyway, I need help informing of it
+    - I have an issue making a payment, how do I inform of it?
+    - I want to inform of problems paying
+    - can you ask an agent to solve fucking problems making a payment?
+    - ask an agent how to report fucking payment problems
+    - I got an error when I attempted to pay, but I was charged anyway, how can I report
+      it?
+    - how can I inform of problems paying?
+    - I got an error when I attempted to pay, but my card was charged anyway, I need
+      help informing of it
+    - I have a problem when trying to pay for my order, what can I do to report it?
+    - I have an issue when trying to make a payment with card, what should I do?
+    - an error message pops when I attempt to make a payment for my order, what sould
+      I do?
+    - can u ask an agent how to solve problems paying?
+    - i want to solve a problem paying, what do i have to  do?
+    - I have an issue when trying to pay with card, how can I report it?
+    - i have a problem when trying to pay, how can i inform of it?
+    - I got an error when I attempted to make a payment, but my card was charged anyway,
+      what can I do to notify it?
+    - I got an error when I tried to make a payment, but I was charged anyway, what
+      do I have to do?
+    - I need help solving a problem making a payment
+    - can u ask an agent if i could report a problem with my payment, please?
+    - I want to report an issue paying
+    - I got na error message when I atempted to make a payment, but I was charged anyway,
+      help me inform of it
+    - could you ask an agent how to inform of a payment issue, please?
+    - i have a issue when trying to pay, how can i notify it?
+    - I have a problem when trying to pay for my online order, what can I do to inform
+      of it?
+    - I got an error message when I tried to pay, but my card was charged anyway, can
+      I inform of it?
+    - I have a problem when trying to pay and I would like to report it, please
+    - an error pops when i try to make a payment for my order
+    - could you ask an agent how to notify problems making a payment?
+    - how do I solve a fucking problem paying?
+    - can you ask an agent if I could notify a problem making a payment, please?
+    - I got an error when I attempted to pay, but my card was charged anyway, what can
+      I do to notify it?
+    - i have a problem when trying to pay for my order, can u help me?
+    - where to report payment problems
+    - I got an error when I trued to pay, but I was charged anyway, notify it
+    - where can i inform of a payment problem?
+    - I got an error when I tried to pay, but I was charged anyway, can you report it?
+    - I have a problem making a payment with card, what should I do to notify it?
+    - I want to report a problem paying, what should I do?
+    - can i notify a payment problem ?
+    - I have an issue when trying to pay for my online order , what can I do to notify
+      it?
+    - i wanna notify an issue paying, can u help me?
+    - I have an issue paying with card, what should I do to inform of it?
+    - can you ask an agent if I could notify payment issues?
+    - how could I inform of a paymeent problem ?
+    - I have an issue making a payment with card and I want to notify it
+    - help me oxlve a payment problem
+    - i wanna inform of a payment problem, what should i do?
+    - please, ask an agent where I could report a fucking issue paying
+    - where do I notify payment issues?
+    - how can I inform of a problem making a payment?
+    - I have an issue when trying to make a payment with card, what can I do?
+    - i got an error message when i tried to make a payment, but my card was charged
+      anyway, can u notify  it?
+    - how can I notify issues making a payment?
+    - i wanna solve a payment problem, what do i have to do?
+    - I have a problem when trying to pay for my order, what do I have to do?
+    - I have a problem when trying to make a payment with card, what should I do?
+    - can u ask an agent howi could report an issue with my payment , please?
+    - please, ask an agent if I can notify a fucking issue making a payment
+    - I got an error when I tried to make a payment, but I was charged anyway, what
+      do I have to do to report it?
+    - i have an issue when trying to pay, can i report it?
+    - i got an error message when i attempted to make a payment, but i was charged anyway,
+      how do i inform of it?
+    - i get an error message when i try to make a payment for my order, what can i do?
+    - I have a problem when trying to pay for my online order, I need help notifying
+      it
+    - I want to inform of a problem with my payment, what do I havr to do?
+
+- intent: place_order
+  examples: |
+    - how do I make a purchase?
+    - where do i place an order?
+    - how can I make a purchase?
+    - I want to place an order, what can I do?
+    - where to make an order
+    - where can I make an order?
+    - I want to place an order, can you help me?
+    - I need help making a purchase
+    - can I make a purchase?
+    - where do I make a purchase?
+    - I want to place an order, what should I do?
+    - could you ask an agent where I can place an order?
+    - can u ask an agent to make a purchase?
+    - I want to make an order , what do I have to do?
+    - please, ask an agent if i could make a purchase
+    - can u ask an agent where i could make a fucking order?
+    - id like to place an order, what can i do?
+    - I want to make a order
+    - I want to make a purchase, what should I do?
+    - can u ask an agent where i can make an order?
+    - I want to make an order, can you help me?
+    - I'd like to make an order, what should I do?
+    - I want to make a purchase
+    - where can I make a purchase?
+    - where do I make an order?
+    - help me make a purchase
+    - please, can you ask an agent how to make an order?
+    - ask an agent how to make an order
+    - i need help placing an order
+    - can i make an order?
+    - where could i make a purchase?
+    - where to place an order
+    - where do I place an order?
+    - I want to place a order, what do I have to do?
+    - how to make an order
+    - sak an agentz how i can make a purchase
+    - can u ask an agent where to make an order?
+    - how can I mlake an order?
+    - where can i place an order?
+    - how can I place an order?
+    - can u ask an agent if i can place an order?
+    - how can i make an order?
+    - how to make a purchase
+    - ask an agent where i can make an order
+    - can I place an order?
+    - how do I make an order?
+    - i wnna place a order, can u help me?
+    - ask an agent if i can make a purchase
+    - help me make an order
+    - ask an agent if i can make an order
+    - ask an agent to place an order
+    - I need help making an ofder
+    - id like to make a purchase
+    - help me place an order
+    - can I make an order?
+    - I want to maked an order, what can I do?
+    - where to make a purchase
+    - I want to make a purchase, what do I have to do?
+    - ask an agent if I can place a fucking order
+    - how do I plcae an order ?
+    - where can I place an order?
+    - I want tp make a purchase, can you help me?
+    - I want to make a pucrhase, what can I do?
+    - I want to place an order
+    - how to place an order
+    - ask an agent where i can place an order
+    - I need help placing an order
+    - I would like to make a fucking order, can you help me?
+    - i wanna place an order, what can i do?
+    - I want to make a order, what should I do?
+
+- intent: registration_problems
+  examples: |
+    - I found problems when trying to sign up
+    - I fonud an issue signing up
+    - I found problems when trying to open a account
+    - I found an issue while signing up
+    - I had regiwtration problems
+    - I found a problem while creating a profile
+    - I had issues opening an account
+    - I found an issue while registering
+    - I'm having issues signing up
+    - I had issues when trying to sign up
+    - I had an issue when trying to sign up
+    - There's an issue with the registration
+    - I had issues creating a profile
+    - I had problems when trying to create an account
+    - I found an issue when trying to open an account
+    - I have issues registering
+    - I had problems when trying to open an account
+    - I  found an issue opening an account
+    - I had an issue while creating an account
+    - I'm having an issue with the registration
+    - I'm having problems when trying to sign up
+    - I have a problem registering
+    - I'm having an issue when trying to create an account
+    - I have an issue registering
+    - I have problems registering
+    - I'm having a problem when trying to register
+    - I found a problem opening an account
+    - There are some issues with the registration
+    - I found problems when trying to create a profile
+    - I found an issue registering
+    - I'm having an issaue opening an account
+    - I had a problem creating an account
+    - I had problems while creating a profile
+    - I'mhaving problems creating a profile
+    - I had issues while signing up
+    - I found a problem while opening an account
+    - I'm having issues creating a profile
+    - I found issues while opening an account
+    - I found problems while creating a profile
+    - I have problems opening an account
+    - I had a problem whlie creating a profile
+    - I had a problem while signing up
+    - I have issues signing up
+    - I had an issue when trying to create an account
+    - I had an issue while opening an account
+    - I found problems signing up
+    - I had issues while creatinga profile
+    - I had a problem while creating an account
+    - I'm having an issue creating a profile
+    - I'm having a problem when trying to create a profile
+    - I found problems creating a profile
+    - I had an issue while registering
+    - I found a problem when trying to create a profile
+    - I had a problem creating a profile
+    - I found an issue while opening an account
+    - I'm having issues when trying to create a profile
+    - I'm trying to regiter but I can't
+    - I have registration problems
+    - I'm having issues when trying to open an account
+    - I can't sign up
+    - I have a problem signing up
+    - I have problems creating an account
+    - Ifound an issue creating an account
+    - I found problems registering
+    - There is a problem with the reggistration
+    - I have an issue creating an account
+    - I had problems creating an account
+    - I'm having a problem when trying to create an account
+    - I had registration issues
+    - I had an issue when trying to register
+    - I had an issue while creating a profile
+    - I'm having issuea when trying to sign up
+    - I' trying to open an account but I can't
+    - I had az problem with the registration
+    - I had problems registering
+    - registration issue
+    - I'm having reigstration issues
+    - registration issues
+    - I'm having issues creating a acount
+    - I found issues while registering
+    - registration problem
+    - I have some problems with thge registration
+    - I found problems while creating an account
+    - I had a problem while registering
+    - I had an problem registeringb
+    - I had problems creating a profile
+    - I found a problem while creating an account
+    - I foundproblems when triyng to register
+    - I had an isue when trying to open an account
+    - I found a problem while registering
+    - I'm having a problem opening an account
+    - I found an issue while creating an account
+    - I found issus registering
+    - I found an issue when trying to sign up
+    - I had problems while poening an account
+    - I found problems while registering
+    - I had issues while registering
+    - I'm having problems creating an account
+    - I can't register
+    - I found problems while opening an account
+    - I found iwsues while creating an account
+    - I had issues when trying to create a profile
+    - I had an issue opening an account
+    - I have a problem opening an account
+    - I have problems creating a profile
+    - I had problems when trying to create a profile
+    - I had a problem while opening an account
+    - I'm having a problem signing up
+    - I found a problem registering
+    - I'm having some problems with the registration
+    - I'm having a problem registering
+    - I had a issue creating a profile
+    - I'm having problems signing u
+    - I'm having problems when trying to createan account
+    - I have an issue with the registration
+    - I found a problem when trying to create an account
+    - I found a problem signing up
+    - I found issues when trying to sign up
+    - I had a problem when trying to create a profile
+    - I had an issue with the registration
+    - I found an issue when trying to register
+    - I had issues creating an account
+    - I had an issue when trying to create a profile
+    - I found issues signing up
+    - I found issues while creating a profile
+    - I found issues when trying to create a profile
+    - I found an issue while creating a profile
+    - I found a problem when trying to sign up
+    - I have issues opening an account
+    - I can't create a profile
+
+- intent: review
+  examples: |
+    - I'm happy with the service, can I submit a review?
+    - I'm happy with the service, what can I do to file a comment?
+    - I want to file a comment for a service, what can I do?
+    - I'm happy with the service , can I file a review?
+    - I'm happy with the service, what do I have to do to lodge a comment?
+    - I'm happy with the service, can you submit an opinion?
+    - i wanna lodge a comment for a service, what should i do?
+    - I'm happy with the service, help me file an opinion
+    - could u ask an agent how to write a fucking opinion for a service?
+    - i need help writing a comment
+    - I want to file an opinion, what do I have to do?
+    - ask an agent how i can leave an opinion for a service, please
+    - i am happy with the service, help me submit a comment
+    - I'm happy with the service, lodge a review
+    - please, can u ask an agent how i could leave an opinion?
+    - I would like to submit a fucking comment for a service, can you help me?
+    - how do I leave a  comment?
+    - I'm happy with the service, how do I file an opinion?
+    - ask an agent if i can  leave a fucking review
+    - where can I leave a review?
+    - were to write a comment for a service
+    - how do I write a review?
+    - im happy with the service, can u make a comment?
+    - I'm happy with the service and I want to oldge a comment
+    - I'm happy with the service, what should I do to make an comment?
+    - i want to make a review, what do i have to do?
+    - I'm happy with the service , what do I have to do to file a comment?
+    - I am happy with the service, could you file a comment, please?
+    - i am happy with the service, i need help filing a comment
+    - where can I write a review?
+    - ask an agent to leave a conment
+    - I need help leaving a comment for a service
+    - ask an agent where i can write an opinion
+    - I want to make a review, can you help me?
+    - im happy with the service, help me submit an opinion
+    - where to write an opinion for a service
+    - I'm happy with the serviice, I need help lodging a comment
+    - I want to make an opinion for a service, can you help me?
+    - I need help writing a comment
+    - im happy with the service, how do i make a comment?
+    - I want to submit an opinion for a service, what should I do?
+    - I want to make an opinion, what should I do?
+    - how to leave a comment
+    - I want to submit a  review, what should I do?
+    - where do I leave an opinion?
+    - i am happy with the service, how do i submit a comment?
+    - i am happy with the service and i wanna submit a review
+    - help me write an opinion for a service
+    - please, can u ask an agent where i could write a fucking comment?
+    - im happy with the service, i need help  lodging an opinion
+    - I want to lodge an opinion, what can I do?
+    - i want to make a review for a service, can u help me?
+    - how to leave an opinion for a service
+    - I'm happy with the service, help me submit an opinion
+    - ask an agent to write a comment
+    - I want to lodge an opinion for a service, what do I have to do?
+    - I want to lodge an opinio for a service, can you help me?
+    - I want to lodge an opnion for a service, what should I do?
+    - can I write an opinion for an service?
+    - were can I write an opinion for a service?
+    - im happy with the service, i need help submitting a comment
+    - how can I leave a comment?
+    - I want to lodge a review for a service, what can I do?
+    - how can i write an opinion for a service?
+    - I'm happy with the service, how can I lodge an opinion?
+    - could you ask an agent how to write a review for a service?
+    - I want to lodge an review, what should I do?
+    - ask an agent how I can write a fucking opinion, please
+    - can u ask an agent if i can leave a comment?
+    - where to leave a review
+    - I want to file an opinion, what can I do?
+    - how can I leave a review ?
+    - i wanna submit a comment for a service, what can i do?
+    - I want to file a comment, what should I do?
+    - I want to make an opinion for a service, what should I do?
+    - I'm happy with the service, submit an opinion
+    - I want to submit a comment for a service, what can I do?
+    - I want to lodge a comment for a service, what should I do?
+    - I want to leave an opinion
+    - i want to lodge a review, what can i do?
+    - where do I write a review for a service?
+    - I'm happy with the service, make a comment
+    - i want to make an opinion for a service, what should i do?
+    - i want to submit an opinion, what do i have to do?
+    - please, could u ask an agent where i could leave a comment?
+    - I want to make a review, what should I do?
+    - I want to submit an opinion, can you help me?
+    - can I write an opinion?
+    - I'm happy with the service, how do I file a comment?
+    - please, can u ask an agent ot leave a comment?
+    - ask an agent how i can leave a review for a service
+    - i wanna lodge a comment, what do i have to do?
+    - I'm happy with the service, what  do I have to do to make a comment?
+    - where to leave an opinion
+    - I'm happy with the service, file a review
+    - where could i write an opinion for a service?
+    - I'd like to leave a comment for a service
+    - please, can yu ask an agent if I can write a ficking review?
+    - I'm happy with the service, can I make a review?
+    - how to write an opinion
+    - i want to lodge a review for a service, what can i do?
+    - how do i leave an opinion for a service?
+    - how do I write a comment for a service?
+    - i want to make an opinion, what can i do?
+    - I want to submit an opinion, what should I do?
+    - can you ask an agent if I can write an opinion for a service, please?
+    - I need help leaving a review for a service
+    - i am happy with the service, what can i do to file a comment?
+    - im happy with the service, how can i lodge an opinion?
+    - ask an agernt where i could write areview
+    - please, could u ask an agent how i can leave a fucking review for a service?
+    - can u ask an agent to write a review for a service?
+    - please, can u ask an agent how i can leave an opinion for a service?
+    - I am happy with the service and I would like to make an opinion
+    - I want to make a review, what can I do?
+    - where do I leave an opinion for a service?
+    - I want to lodge a comment for a service, what do I have to do?
+    - I'm happy with the service, I need help filing a review
+    - I'm happy with the service, how do I lodge a review?
+    - I'm happy with the service, can you lodge an opinionm?
+    - id like to submit a fucking comment for a service, what do i have to do?
+    - I'm happy with the service, how can I submit a comment?
+    - I need help writing an opinion
+    - please, can u ask an agent were ot write a fucking opinion?
+    - ask an agent how i can writean opinion for a service
+    - i am happy with the service, can u make a review?
+    - how to leave an opinion
+    - I'm happy with the service, can you submit a comment?
+    - please, could u ask an agent how i can write a fucking review for a service?
+    - I'm happy with the service, what should I do to file a comment?
+    - where can I write a comment for a service?
+    - ask an agent how to write a comment for a service
+    - im happy with the service and i wanna submit a comment
+    - I want to submit a comment for a service, what shouldI do ?
+    - please, ask an agent where i can write a fucking comment for a service
+    - I'm happy with the service, help me file a review
+    - I'm happy with the service and I want to make a comment
+    - I'm happy with the service and I want to make an opinion
+    - i wanna make a review for a service, what can i do?
+    - I'm happy with the service, what can I do to file a review?
+    - I want to write a comment for a service
+    - I want to leave a comment
+    - I'm happy with the service, how do I file a review?
+    - I'm happy with the service, submit a review
+    - I need help writing a review
+    - I'm happy with the service, can you lodge a comment?
+    - where to leave a comment for a service
+    - please, could u ask an agent how to leave a review for a service?
+    - could u ask an agent how i can leave a fucking review, please?
+    - I'm happy with the service, what can I do to submit a comment?
+    - where do i write a review?
+    - I'm hqppy with the service, what should I do to make an opinion?
+    - I'm happy with the service, what should I do to file an opinion?
+    - can u ask an agent if i could write a comment?
+    - can u ask an agent how i can leave an opinion for a service?
+    - i am happy with the service, could i lodge an opinion?
+
+- intent: track_order
+  examples: |
+    - can you ell me how I can know where my orders are?
+    - I want to know if I can check my shipments
+    - I want to tack my orders
+    - where can I track my delivery?
+    - I wanty to kknow how I can check my order
+    - please, can you ask an agent where to check my delivery?
+    - is my order out for delivery?
+    - tell me how to track my shipments
+    - I want to know where to track my deliveries
+    - please, ask an agent if my delivery is on its way
+    - i wanna track my shipment, tell me how I can d it
+    - I want to know if my orders are out for delivery
+    - where to track my orders
+    - help me track my shipments
+    - where to track my package
+    - please, ask an agent where I can track my shipment
+    - where to view the status of my order
+    - ask an agent how to check my shipment
+    - i want to track my order, what can i do?
+    - I want to track my order, tell me where I can do it
+    - could u ask an agent how I can check my order, please?
+    - can I see the status of my order?
+    - can u ask an agent to give me information about the status of my order?
+    - please, do you mind asking an agent if my orders are on theit awy?
+    - where can I track my shipments?
+    - tell me how I can check my shipment
+    - can u ask an agent where to track my packages?
+    - I'd like to track my fucking package, can you tell me how to do it?
+    - how do I view the status of my order?
+    - please, could you tell me where I can check my delivery?
+    - can i check my fucking orders?
+    - how can I know where my order is?
+    - can I check my delivery?
+    - can you tell me how I can track my shipment?
+    - I want to check my shipments
+    - tell me were my order is
+    - i want to track my order, what should i do?
+    - where to check my shipment
+    - I wanna know how I can know where my orders are
+    - i want to track my order, can u help me?
+    - where to track my shipments
+    - I want to know if my packages are out for delivery
+    - tell me how to check my orders
+    - show me the status of my purchase
+    - I want to know if I can check my shipment
+    - can u ask an agent if i can check my delivery?
+    - can you ask an agent if my package is on its way, please?
+    - tell me how I can know where my packages are
+    - can you give me information about the status of my purchase?
+    - could you ask an agent how I can check my fucking orders?
+    - can I track my order?
+    - can u ask an agent where i can check the status of my purchase?
+    - I want to track my shipment, can you tell me how to do it?
+    - how do i view the status of my fucking order?
+    - can you tell me if I can track my shipment, please?
+    - I want to track my package, tell me were to do it
+    - please, ask an agent what the status of my purchase is
+    - could u ask an agent where to track my shipments, please?
+    - where can I check my package?
+    - can you ask an agent if i can check my packages?
+    - can you tell me how I can check my packages?
+    - ho can I track my delivery?
+    - can you show me the status of my order, please?
+    - can you tell me where I can track my shipments?
+    - tell me if I can track my package
+    - can u ask an agent if i can trcak my shipment?
+    - ask an agent how to know where my deliveries are
+    - can you tell me where to check my order?
+    - could u ask an agent what my order of my fucking package is, please?
+    - I want to track my shipments , can you tell me how I can do it?
+    - ask an agent if I can check my shipment
+    - could you tell  me if i could check my fucking package, please?
+    - telll me if i can check my fucking shipment
+    - tell me how to check myshipment
+    - please, tell me if I can check my shipment
+    - do you mind asking an agent where to track my shipments, please?
+    - tell me where I can check my deliveries
+    - can u ask an agent to check my package?
+    - ask an agent where to check my orders
+    - I wanna track my package , tell me how I can do it
+    - I want to view the status of my purchase, can you help me?
+    - tell me if my shipments are on their way
+    - do you mind asking an agent if I could track my order?
+    - i wanna track my purchase, what do i have to do?
+    - can you tell me if i can check my order, please?
+    - I wanna track my shipments, can you tell me how to do it?
+    - can u ask an agent how i can track my order?
+    - i want to know how to know where my package is
+    - i wqnna check my package, could you tell me where to do it, please?
+    - tell me how to know where my delivery is
+    - i want to know how I can know where my packages are, please
+    - i wanna see the status of my order, what should i do?
+    - i wanna check my orders, tell me where I can do it
+    - can you tell me how to know where my shipment is?
+    - I want to know where I can track my order
+    - i wanna check my order, can you tell me how to do it?
+    - help me track my fucking shipment, please
+    - tell me where to check my order
+    - how can I know where my orders are?
+    - tell me how to trac my delivery
+    - track my oredr
+    - help me check my order
+    - ask an agent if i can track myshipment
+    - I want to track my orders, tell me whereI can do it
+    - tell me how I ca check my order
+    - I wanna check my packages, tell me how to do it
+    - i wanna track my order, can u help me?
+    - help me view the status of my purchase
+    - i want to track my shipment, tell me how to do it
+    - can u ask an agent where to check my order?
+    - where do I check my shipments?
+    - can you tell me where to check my delivery?
+    - tell me how I can know where my shipment is
+    - can you ask an agent to check my shipment?
+    - I wanna know how I can know where my deliveries are
+    - I wanna track my packages, tell me how to do it
+    - how to view hte status of my purchase
+    - where do I track my packages?
+    - could u ask an agent if i can see the tsatus of my fucking purchase?
+    - ask an agent where i can track my order
+    - I want to track my shipments, tell me how to do it
+    - tell me how to check my package
+    - how do I check my shipments?
+    - I want to track my shipment, can you tell me how I can do it?
+    - can you ask an agent how I can track my package?
+    - can you tell me how I cfan check my delivery?
+    - can u ask an agent how I can track my shipment?
+    - I wanna track my deliveries, tell me how I can do it
+    - check my deliveries
+    - can u ask an agent to check my orders?
+    - I want to know if my packages are on their way
+    - I want to check my orders, tell me where I can do it
+    - I need help seeing the status of my purchase
+    - I want to know how I can know where my delivery is
+    - ask an agent how I can track my delivery
+    - ask an agent how I can know where my shipment is
+    - i want to check my packages
+    - I want to know how I can track my deliveries
+    - I want to see the status of my purchase, what can I do?
+    - can you tell me where to track my package?
+    - can you tell me how I can check my order?
+    - I wanr to check the status of my order, what can I do?
+    - how can i see the status of my purchase?
+    - i wanna know how to check my orders
+    - can you tell me how I can check my package?
+    - I need help checking my shipments
+    - track my package
+    - I want to know how I can know where my orders are
+    - how can I check my package?
+    - were do i check the status of my purchase?
+    - can I get the trackig no for my delivery?
+    - can you tell me how I can check my orders?
+    - I  want to know how I can know where my deliveries are
+    - tell me where I can track my package
+    - how do I check my packages?
+    - I want to check my package, tell me where I can do it
+    - I want to check my shipment, can you tell me how I can do it?
+    - Where is my order ?
+
+- intent: track_refund
+  examples: |
+    - tell me if my refund was processed
+    - I need help checking the status of my refund
+    - I want to see the status of my refund, can you help me?
+    - i want to track my fucking reimbursement, can u help me, please?
+    - I want to know if my refund was processed
+    - I want to view the status of my reimbursement, what should I do?
+    - i want to view the status of my reimbursement, what should i do?
+    - how do I  track my reimbursement?
+    - ask an agent if I can track my refund
+    - ask an agent if i can view the status of my refund
+    - can you show me the status of my refund?
+    - what's the status of my refund?
+    - I want to check the status of my reimbursement, can you hepp me?
+    - i wanna check the status of my reimbursement, what should i do?
+    - I want to check the status of my reimbursement
+    - how do I check the status of my reimbursement?
+    - ask an agent how i can view the status of my refund
+    - please, ask an agent where i can track my reimbursement
+    - can I see the status of my reimbursement?
+    - help me track my refund, please
+    - can I track my refund?
+    - was my refund prlcessed?
+    - I need help viewing the status of my refund
+    - i wanna know the status of my refund, what should i do?
+    - I would like to track my reimbursement, what do I have to do, please?
+    - where do I track my reimbursement?
+    - i want to know the status of my reimbursement
+    - I want to view the status of my reimbursement
+    - I want to view the status of my reimbursement, can you help me?
+    - I want to track my reimbursemennt, what can I do, please?
+    - I want to know the status of my reimbursement, what do I have to do to track it?
+    - I want to know the status of my reimbursement, how do I track it?
+    - I want to track my refund, can you help me?
+    - can you tell me if my refund has been  processed?
+    - can you check the status of my reimbursement?
+    - i need help tracking my refund
+    - I want to know the status of my refund, what do I have to do to track it?
+    - i want to know if my reimbursement was processed
+    - I want to know the status of my refund, how do I track it?
+    - how to view the status of my reimbursemernt
+    - how do I view the status of my refund?
+    - can you find information about the status of my reimbursement?
+    - I'd like to see the fucking status of my refund, can you help me, please?
+    - can I check the status of my reimbursement ?
+    - where can I check the status of my reimbursement?
+    - ask an agent how i can check the status of my reimbursement
+    - I want to check the status of my reimbursement, what do I have to do?
+    - I want to view the status of my refund, what should I do?
+    - where to track my fucking reimbursement
+    - where do I check the status of my reimbursement?
+    - can I view the status of my reimbursement?
+    - i wanna know the status of my reimbursement and i wanna trackit
+    - I would like to view the status of my refund, could you help me, please?
+    - can I view the status of my refund ?
+    - how to track my feimbursement
+    - I want to know the status of my reimbursement and I want to track it
+    - help me track my refund
+    - how can I check the status of my refund?
+    - where to check the status of my reimbursement
+    - can u show me information about the status of my reimbursement?
+    - how can I track my reimbursement?
+    - where to view the status of my refund
+    - where to check the status of my refund
+    - I want to view the status of my refund
+    - ask an agent how to check the status of my reimbrsement
+    - can u ask an agent if i can check the status of my refund?
+    - where to see the status of my refund
+    - I want to see the status of my refund, what should I do?
+    - I want to check the status of my refund, what do I have to do?
+    - please, ask an agent to check the fucking status of my reimbursement
+    - i want to see the status of my reimbursement, what can i do?
+    - can u ask an agent how to check the status of my reimbursement?
+    - I want information about the status of my refund
+    - i wanna see the status of my reimbursement, what can  i do, please?
+    - i wanna see the status of my reimbursement, what can i do?
+    - please, can you ask an agent how I oclud check the status of my reimbursement?
+    - how do I track my refund?
+    - how to see the status of my refund
+    - I want to know the status of my reimbursement, help me track it
+    - can u ask an agent how to track my refund?
+    - I need help checking the status off my reimbursement
+    - I need information about the status of my reimbursement
+    - I want to see the status of my refund
+    - tell me if my refund has been processed
+    - i wanna know the status of my reimbursement, what can i do?
+    - can u show me the status of my reimbursement?
+    - help me check the status of my reimbursement
+    - tell me if my reimbursement has been processed
+    - help me view the status of my reimbursement
+    - I want to sseethe status of my reimbursement, could you help me, please?
+    - ask an agent how to view the status of my reimbursement
+    - can u show me information about the status of my refund?
+    - where do I check the status of my refund?
+    - I want to see the status of my refund, what can I do?
+    - i want to know the status of my reimbursement, what should i do to track it?
+    - ask an agent where I could check the status of my refund
+    - where to view the status of my reimbursement
+    - i want to know the status of my reimbursement, help me track it
+    - was my reimbursement processed ?
+    - I want to track my reimbursement, what can I do?
+    - I want to know the status fo my reimbursement , what should I do to track it?
+    - how can I se the status of my reimbursement?
+    - can u ask an agent to check the status of my refund?
+    - I want to know the status of my reimbursement, what can I do?
+    - where do i view the status of my refund?
+    - i wanna know the status of my refund, can u help me?
+    - please, could u ask an agent how to ese the fucking status of my refund?
+    - how can I view the status of my reimbursement?
+    - i want to view the statu of my refund, what can i do?
+    - information about the status of my reimbursement
+    - I want to know the status of my refund, what should I do to tracl it?
+    - i want to check the status of my refund, what should i do?
+    - I want to view the status of my reimbursement, what do I have to do?
+    - I want to know the status of my refund , what can I do to track it ?
+    - please, can you ask an agent where I can see the status of my refund?
+    - how to view the status of my refund
+    - I want to know the status of my reimburseent, what can I do to track it?
+    - I want to check the status of my reimbursement, what should I do?
+    - were can I view the status of my refund?
+    - i wanna check the status of my reimbursement, can u help me?
+    - I want to know the status of my reimbursement, can you help me?
+    - i want to view the status of my refund, can u help me?
+    - i wanna know the sttus of my fefund, how could i track it?
+    - can u show me the status of my refund?
+    - I want to know the status of my refund, what do I have to do?
+    - i want to know the status of my refund, i need help tracking it
+    - where can I track my reimbursement?
+    - I want to see the status of my reimbursement
+    - I want to check the status of my reimbursement, what can I do?
+    - can u ask an agent where i can check the status of my refund?
+    - where can I check the status of my refund?
+    - can you tell me if my reimbursement has been processed?
+    - can you show me the statu of my reimbursement?
+    - helpme view the status of my refund
+    - can u ask an agent if my reimbursement has been processed?
+    - ask an agent how to see the status of my refund
+    - i need information about the status of my reimbursement
+    - I want to see the status of my reimbursement, what do I have to do?
+    - I want to know the status of my refund, track it
+    - where to track my reimbursement
+    - please, can you find information about the status of my reimbursement?
+    - how can I see the status of my refund?
+    - I want to track my refund, what do I have to do?
+    - I want to  know if my reimbursement has been processed
+    - can I track my reimbursement?
+    - i want to know the statua of my reimbursement, track ot
+    - please, could you ask an agent for information about the fucking status of my
+      reimbursement?
+    - ask an agent if my reimbursement was processed
+    - i wanna view the status of my refund, what should i do?
+    - ask an agent where i can check the status of my reimbursement
+    - i want to check the status of my refund, what can i do?
+    - i want to check the status of my refund, can u help me?
+    - how to check the status of my reimbursement
+    - ask an agent to track myreimbursement
+    - I want to track my reimbursement, what should I do?
+    - please, can you ask an agent how I can view the status of my refund?
+    - help me track my reimbursement
+    - I want to track my reimbursement
+    - I want to know if my reimbursement was processed
+
+- intent: reset_password
+  examples: |
+    - I forgot my password
+    - I can't remember my password
+    - I need to reset my password
+    - How do I reset my password?
+    - Password reset issue
+    - Can't login with my password
+    - I'm having trouble logging in
+    - I can't log in even with the correct username
+    - I can't access my account
+    - Login is failing even though my username is correct
+    - Account locked
+    - I forgot my login credentials
+    - I don't remember my username
+    - What should I do if I forgot my username?
+    - How can I recover my account?
+    - I need to recover my password
+    - How can I regain access to my account?
+
+- intent: reset_email_issue
+  examples: |
+    - I didn't get the reset email
+    - I checked spam, it's not there
+    - What to do if I don't receive the email?
+    - The mail has not arrived yet. 
+
+- intent: reset_done
+  examples: |
+    - Okay I reset it
+    - Got the email, thanks
+    - It worked now
+
+- intent: tracking_not_working
+  examples: |
+    - The tracking link is not working
+    - I clicked the link but it's broken
+    - I can't track my package
+    - It says "not found"
+    - It is not working
+    
+
+- intent: order_delayed
+  examples: |
+    - My delivery is late
+    - It's past the estimated date
+    - Why is my order delayed?
+
+- intent: order_received
+  examples: |
+    - I received my order
+    - The package has arrived
+    - Got it, thanks!
+
+- intent: unable_to_change_address
+  examples: |
+    - It's not letting me change the address
+    - The option is greyed out
+    - I can't change the address now
+    - Why can't I edit my shipping details?
+    - I can't change it now 
+
+- intent: already_shipped
+  examples: |
+    - The order is already shipped, now what?
+    - Can I change address after shipment?
+    - It's in transit, but I need to change the address
+
+- intent: facing_issue_create_account
+  examples: |
+    - I am not able to create account
+    - Signup is not working
+    - I filled the form but nothing happened
+    - The registration page is broken
+    - I'm having issues registering
+
+- intent: ask_account_requirements
+  examples: |
+    - What details are needed to create account?
+    - What info is required for signup?
+    - Do I need an email to register?

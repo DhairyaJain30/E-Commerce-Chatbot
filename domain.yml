@@ -1,0 +1,232 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - create_account
+  - delete_account
+  - edit_account
+  - registration_problems
+  - contact_customer_service
+  - contact_human_agent
+  - delivery_options
+  - delivery_period
+  - complaint
+  - review
+  - check_invoice
+  - get_invoice
+  - newsletter_subscription
+  - cancel_order
+  - place_order
+  - track_order
+  - check_payment_methods
+  - payment_issue
+  - check_refund_policy
+  - get_refund
+  - track_refund
+  - change_shipping_address
+  - reset_email_issue
+  - reset_done
+  - tracking_not_working
+  - order_delayed
+  - order_received
+  - unable_to_change_address
+  - already_shipped
+  - facing_issue_create_account
+  - ask_account_requirements
+
+# Reset Password
+slots:
+  reset_stage:
+    type: text
+    influence_conversation: true
+    mappings:
+       - type: from_intent
+         intent: reset_password
+         value: "reset_stage"
+
+# Track Order
+  track_stage:
+    type: text
+    influence_conversation: true
+    mappings:
+       - type: from_intent
+         intent: track_order
+         value: "track_stage"
+
+# Check Shipping
+  shipping_stage:
+    type: text
+    influence_conversation: true
+    mappings:
+       - type: from_intent
+         intent: shipping_info
+         value: "shipping_stage"
+
+# Create Account
+  creating_account:
+    type: bool
+    influence_conversation: true
+    initial_value: false
+    mappings:
+       - type: from_intent
+         intent: create_account
+         value: true  # You may set it to true if the intent matches
+
+# Reset Password
+actions:
+  - action_set_reset_stage_started
+  - action_set_reset_stage_email_issue
+  - action_clear_reset_stage
+
+# Track Order
+  - action_set_track_stage
+  - action_set_track_stage_issue
+  - action_clear_track_stage
+
+# Check Shipping
+  - action_set_shipping_stage
+  - action_set_shipping_stage_issue
+  - action_clear_shipping_stage
+
+# Create Account
+  - action_set_account_stage_started
+  - action_set_account_stage_issue
+  - action_clear_account_stage
+
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_create_account:
+    - text: "Sure! You can create an account by clicking on the 'Sign Up' button at the top-right corner of the page."
+
+
+  utter_facing_issue_create_account:
+    - text: "Sorry to hear you're having trouble! Please try refreshing the page or using a different browser. If the issue continues, contact support."
+
+  utter_ask_account_requirements:
+    - text: "To create an account, you'll need a valid email address and a secure password. That's all!"
+
+  utter_delete_account:
+    - text: "To delete your account, please go to your profile settings and select 'Delete Account'."
+
+  utter_place_order:
+    - text: "You can place an order by adding items to your cart and proceeding to checkout."
+
+  utter_cancel_order:
+    - text: "To cancel an order, go to your orders page, select the order, and click 'Cancel Order'."
+
+  
+
+  utter_track_order:
+    - text: "Track your order from the 'Track Order' page using your order ID."
+  
+
+  utter_tracking_issue:
+    - text: "If the tracking link isn't working, please wait a while and try again. Sometimes there's a delay in courier updates. Still facing issues? Let us know your order ID."
+
+  utter_order_delayed:
+    - text: "We're sorry for the delay! Sometimes shipping may take longer due to logistics issues. If your order doesn't arrive soon, we'll help escalate it."
+
+  utter_order_received:
+    - text: "Great to hear that your order has arrived! Let us know if there's anything else we can help with."
+
+
+  utter_check_invoice:
+    - text: "You can find your invoice in the 'My Orders' section under each order detail."
+
+  utter_get_invoice:
+    - text: "Download your invoice from your order details in the 'My Orders' section."
+
+  utter_check_payment_methods:
+    - text: "We accept credit/debit cards, UPI, net banking, and wallets."
+
+  utter_payment_issue:
+    - text: "Sorry to hear that! Please contact support or retry the payment after a few minutes."
+
+  utter_check_refund_policy:
+    - text: "Our refund policy is available on the Refund Policy page. Typically, refunds are processed within 5-7 business days."
+
+  utter_get_refund:
+    - text: "You can request a refund from your order page under the 'Return/Refund' section."
+
+  utter_track_refund:
+    - text: "Refund status can be checked under the 'Refunds' tab in your account dashboard."
+
+  utter_change_shipping_address:
+    - text: "You can update your shipping address from the profile or during checkout before confirming your order.If your order is confirmed, you need to cancel the order"
+  
+
+  utter_unable_to_change_address:
+    - text: "If you're unable to change your address, it might be because the order is already being packed or shipped. Please contact support for urgent help."
+
+  utter_already_shipped:
+    - text: "Once an order is shipped, the delivery address usually can't be changed. However, we recommend contacting the courier with your tracking ID for any possible rerouting."
+
+
+  utter_delivery_options:
+    - text: "We offer standard and express delivery options at checkout."
+
+  utter_delivery_period:
+    - text: "Delivery typically takes 3-5 business days, depending on your location."
+
+  utter_contact_customer_service:
+    - text: "You can reach our customer service team via the Contact Us page or by calling our support line."
+
+  utter_contact_human_agent:
+    - text: "Sure, connecting you to a human agent. Please hold on."
+
+  utter_complaint:
+    - text: "We're sorry for the inconvenience. Please share more details, and we'll make it right."
+
+  utter_newsletter_subscription:
+    - text: "You can subscribe to our newsletter at the bottom of the homepage."
+
+  utter_review:
+    - text: "You can leave a review under the product page after purchase."
+
+
+  utter_registration_problems:
+    - text: "Sorry you're facing issues! Please try again or contact support."
+
+
+  utter_reset_password:
+    - text: "I can help you reset your password! You can use the 'Forgot Password' link on the login page. Just enter your registered email, and we'll send you a link to reset your password."
+    - text: "To reset your password, go to the login page and click on the 'Forgot Password' link. You'll receive an email with instructions to reset your password. Let me know if you need any further assistance!"
+    - text: "If you're having trouble logging in, try resetting your password. Go to the login page, click on 'Forgot Password', and follow the steps. If you're still having issues, I'm here to assist!"
+    - text: "To reset your password, simply click the 'Forgot Password' link on the login screen. Check your email inbox (and spam folder) for the reset link. Let me know if that works!"
+    - text: "Don't worry! You can reset your password by clicking on the 'Forgot Password' link on the login page. If you don't receive the email, please check your spam folder or try again with the correct email address."
+    - text: "Can't log in? Click on the 'Forgot Password' link at the login screen. Enter your registered email, and we'll send you a reset link. Still having issues? Let me know, and I'll guide you further!"
+ 
+  utter_reset_email_issue:
+    - text: "If you didn't get the email, please check your spam folder or wait a few minutes. Still no email? You can request again or contact support."
+
+  utter_thank_you:
+    - text: "Glad it worked! Let me know if you need anything else."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
